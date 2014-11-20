@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.ms.internet.message.model.impl.MSMessageModelImpl">
+		<attributes>
+			<id name="messageId" />
+			<basic name="message" />
+			<basic name="dateCreated">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<transient name="primaryKey" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.ms.internet.message.model.impl.MSMSenderModelImpl">
+		<id-class class="com.ms.internet.message.service.persistence.MSMSenderPK" />
+		<attributes>
+			<id name="userId" />
+			<id name="messageId" />
+			<basic name="dateSend">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<transient name="primaryKey" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.ms.internet.message.model.impl.MSMReceiverModelImpl">
+		<id-class class="com.ms.internet.message.service.persistence.MSMReceiverPK" />
+		<attributes>
+			<id name="userId" />
+			<id name="messageId" />
+			<basic name="dateRecieved">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="msStatus" />
+			<transient name="primaryKey" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.ms.internet.message.model.impl.MSMessageImpl" name="MSMessage">
+		<table name="MS_MSMessage" />
+		<attributes />
+	</entity>
+	<entity class="com.ms.internet.message.model.impl.MSMSenderImpl" name="MSMSender">
+		<table name="MS_MSMSender" />
+		<attributes />
+	</entity>
+	<entity class="com.ms.internet.message.model.impl.MSMReceiverImpl" name="MSMReceiver">
+		<table name="MS_MSMReceiver" />
+		<attributes />
+	</entity>
+</entity-mappings>

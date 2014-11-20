@@ -1,0 +1,86 @@
+May 27, 2014 3:52:09 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+May 27, 2014 3:52:10 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+May 27, 2014 3:52:10 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2214 ms
+May 27, 2014 3:52:10 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+May 27, 2014 3:52:10 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.29
+May 27, 2014 3:52:10 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ROOT.xml
+May 27, 2014 3:53:38 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor send-receive-message-portlet.xml
+May 27, 2014 3:53:38 PM org.apache.catalina.startup.HostConfig deployDescriptor
+WARNING: A docBase /Volumes/Working/Workspace/Web/liferay/liferay/bundles/liferay-portal-6.0.6/tomcat-6.0.29/webapps/D:\liferay\bundles\liferay-portal-6.0.6\tomcat-6.0.29\webapps\send-receive-message-portlet inside the host appBase has been specified, and will be ignored
+May 27, 2014 3:53:42 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor tvd-slogan-contest-portlet.xml
+May 27, 2014 3:53:42 PM org.apache.catalina.startup.HostConfig deployDescriptor
+WARNING: A docBase /Volumes/Working/Workspace/Web/liferay/liferay/bundles/liferay-portal-6.0.6/tomcat-6.0.29/webapps/D:\liferay\bundles\liferay-portal-6.0.6\tomcat-6.0.29\webapps\tvd-slogan-contest-portlet inside the host appBase has been specified, and will be ignored
+May 27, 2014 3:53:45 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory chat-portlet
+May 27, 2014 3:53:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory default-site-templates-hook
+May 27, 2014 3:53:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory google-maps-portlet
+May 27, 2014 3:53:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory html5-initializr-theme
+May 27, 2014 3:53:48 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory inkwell-internet-theme
+May 27, 2014 3:53:52 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory kaleo-web
+May 27, 2014 3:53:56 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory mail-portlet
+May 27, 2014 3:53:58 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory management-high-school-portlet
+May 27, 2014 3:54:03 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory opensocial-portlet
+May 27, 2014 3:54:11 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory product-registration-portlet
+May 27, 2014 3:54:13 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-hook
+May 27, 2014 3:54:13 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-mobile-theme
+May 27, 2014 3:54:13 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-theme
+May 27, 2014 3:54:14 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory slogan-contest-portlet
+May 27, 2014 3:54:16 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory social-networking-portlet
+May 27, 2014 3:54:18 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory tunnel-web
+May 27, 2014 3:54:20 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory web-form-portlet
+May 27, 2014 3:54:21 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory wsrp-portlet
+May 27, 2014 3:54:25 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+May 27, 2014 3:54:25 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+May 27, 2014 3:54:25 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/58  config=null
+May 27, 2014 3:54:25 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 134845 ms
+May 27, 2014 3:55:55 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+May 27, 2014 4:13:28 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+May 27, 2014 4:13:53 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+May 27, 2014 4:13:54 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+May 27, 2014 4:13:56 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+May 27, 2014 4:13:56 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [] created a ThreadLocal with key of type [org.apache.axis.utils.XMLUtils.ThreadLocalDocumentBuilder] (value [org.apache.axis.utils.XMLUtils$ThreadLocalDocumentBuilder@1598469]) and a value of type [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl] (value [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl@1c040a30]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+May 27, 2014 4:13:56 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/wsrp-portlet] created a ThreadLocal with key of type [org.apache.axis.utils.XMLUtils.ThreadLocalDocumentBuilder] (value [org.apache.axis.utils.XMLUtils$ThreadLocalDocumentBuilder@54e5a42b]) and a value of type [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl] (value [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl@307d2e98]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+May 27, 2014 4:13:57 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/opensocial-portlet] appears to have started a thread named [com.google.inject.internal.Finalizer] but has failed to stop it. This is very likely to create a memory leak.
+May 27, 2014 4:13:57 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/opensocial-portlet] created a ThreadLocal with key of type [null] (value [org.apache.shindig.common.xml.XmlUtil$2@fbfd1d8]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@7a69c3fb]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+May 27, 2014 4:13:57 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/opensocial-portlet] created a ThreadLocal with key of type [null] (value [com.google.inject.InjectorImpl$1@35c1d286]) and a value of type [java.lang.Object[]] (value [[Ljava.lang.Object;@47e476fc]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+May 27, 2014 4:13:57 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080

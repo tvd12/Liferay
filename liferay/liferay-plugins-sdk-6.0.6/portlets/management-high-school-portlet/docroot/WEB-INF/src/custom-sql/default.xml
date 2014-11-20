@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<custom-sql>
+
+  <sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.findByAVGPointFactor">
+    <![CDATA[
+		SELECT
+			TY_TYStudentPoint.studentId AS studentId, 
+			AVG(TY_TYstudentPoint.point) AS avgPoint
+		FROM
+		        TY_TYStudentPoint
+		WHERE
+		       	courses = ? AND semester = ? AND studentId = ? AND subjectId = ? AND pointFactor = ?
+		GROUP BY 
+		        studentId
+    ]]>
+  </sql>
+  
+   <sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.findByAVGPointSubject">
+    <![CDATA[
+		SELECT 
+			TY_TYStudentPoint.studentId AS studentId, 
+			(SUM(TY_TYStudentPoint.point*TY_TYStudentPoint.pointFactor)
+			/
+			SUM(TY_TYStudentPoint.pointFactor)) 
+			as avgPoint 
+		FROM 
+			TY_TYStudentPoint
+		WHERE
+			courses = ? 
+			AND
+			semester = ? 
+			AND 
+			studentId = ? 
+			AND 
+			subjectId = ?
+		GROUP BY
+			studentId
+    ]]>
+  </sql>
+  
+  <sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.findByAVGPointOfStudents_C_S">
+    <![CDATA[
+		SELECT 
+			TY_TYStudentPoint.studentId AS studentId, 
+			(SUM(TY_TYPrioritySubject.extra*TY_TYStudentPoint.point*TY_TYStudentPoint.pointFactor)
+			/
+			SUM(TY_TYPrioritySubject.extra*TY_TYStudentPoint.pointFactor)) 
+			as avgPoint 
+		FROM 
+			TY_TYStudentPoint, TY_TYPrioritySubject, TY_TYStudent, TY_TYSubject
+		WHERE
+			TY_TYStudentPoint.courses = ? 
+			AND
+			TY_TYPrioritySubject.courses = TY_TYStudentPoint.courses
+			AND
+			TY_TYStudentPoint.semester = ?
+			AND 
+			TY_TYStudent.companyId = ?
+			AND
+			TY_TYStudent.groupId = ?
+			AND
+			TY_TYStudent.studentId = TY_TYStudentPoint.studentId 
+			AND
+			TY_TYSubject.groupId = TY_TYStudent.groupId 
+			AND
+			TY_TYSubject.companyId = TY_TYStudent.companyId 
+		GROUP BY
+			studentId
+		HAVING avgPoint >= ? AND avgPoint < ?
+    ]]>
+  </sql>
+  
+  <sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.countByAVGPointOfStudents_C_S">
+    <![CDATA[
+	    SELECT COUNT(*) as count FROM (
+			SELECT 
+				TY_TYStudentPoint.studentId AS studentId, 
+				(SUM(TY_TYPrioritySubject.extra*TY_TYStudentPoint.point*TY_TYStudentPoint.pointFactor)
+				/
+				SUM(TY_TYPrioritySubject.extra*TY_TYStudentPoint.pointFactor)) 
+				as avgPoint 
+			FROM 
+				TY_TYStudentPoint, TY_TYPrioritySubject, TY_TYStudent, TY_TYSubject
+			WHERE
+				TY_TYStudentPoint.courses = ? 
+				AND
+				TY_TYPrioritySubject.courses = TY_TYStudentPoint.courses
+				AND
+				TY_TYStudentPoint.semester = ?
+				AND 
+				TY_TYStudent.companyId = ?
+				AND
+				TY_TYStudent.groupId = ?
+				AND
+				TY_TYStudent.studentId = TY_TYStudentPoint.studentId 
+				AND
+				TY_TYSubject.groupId = TY_TYStudent.groupId 
+				AND
+				TY_TYSubject.companyId = TY_TYStudent.companyId 
+			GROUP BY
+				studentId
+			HAVING avgPoint >= ? AND avgPoint < ?
+		)abc
+    ]]>
+  </sql>
+  
+   <sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.findByAVGPointOfStudents_C_S_Class">
+    <![CDATA[
+		SELECT 
+			TY_TYStudentPoint.studentId AS studentId, 
+			(SUM(TY_TYPrioritySubject.extra*TY_TYStudentPoint.point*TY_TYStudentPoint.pointFactor)
+			/
+			SUM(TY_TYPrioritySubject.extra*TY_TYStudentPoint.pointFactor)) 
+			as avgPoint 
+		FROM 
+			TY_TYStudentPoint, TY_TYPrioritySubject, TY_TYStudent, 
+			TY_TYSubject, TY_TYClassStudent
+		WHERE
+			TY_TYStudentPoint.courses = ? 
+			AND
+			TY_TYPrioritySubject.courses = TY_TYStudentPoint.courses
+			AND
+			TY_TYStudentPoint.semester = ?
+			AND 
+			TY_TYStudent.companyId = ?
+			AND
+			TY_TYStudent.groupId = ?
+			AND
+			TY_TYStudent.studentId = TY_TYStudentPoint.studentId 
+			AND
+			TY_TYSubject.groupId = TY_TYStudent.groupId 
+			AND
+			TY_TYSubject.companyId = TY_TYStudent.companyId
+			AND 
+			TY_TYClassStudent.courses = TY_TYStudentPoint.courses
+			AND
+			TY_TYClassStudent.studentId = TY_TYStudentPoint.studentId
+			AND
+			TY_TYClassStudent.classId = ?
+		GROUP BY
+			studentId
+		HAVING avgPoint >= ? AND avgPoint < ?
+    ]]>
+  </sql>
+  
+  <sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.countByAVGPointOfStudents_C_S_Class">
+    <![CDATA[
+	    SELECT COUNT(*) as count FROM (
+			SELECT 
+				TY_TYStudentPoint.studentId AS studentId, 
+				(SUM(TY_TYPrioritySubject.extra*TY_TYStudentPoint.point*TY_TYStudentPoint.pointFactor)
+				/
+				SUM(TY_TYPrioritySubject.extra*TY_TYStudentPoint.pointFactor)) 
+				as avgPoint 
+			FROM 
+				TY_TYStudentPoint, TY_TYPrioritySubject, TY_TYStudent, 
+				TY_TYSubject, TY_TYClassStudent
+			WHERE
+				TY_TYStudentPoint.courses = ? 
+				AND
+				TY_TYPrioritySubject.courses = TY_TYStudentPoint.courses
+				AND
+				TY_TYStudentPoint.semester = ?
+				AND 
+				TY_TYStudent.companyId = ?
+				AND
+				TY_TYStudent.groupId = ?
+				AND
+				TY_TYStudent.studentId = TY_TYStudentPoint.studentId 
+				AND
+				TY_TYSubject.groupId = TY_TYStudent.groupId 
+				AND
+				TY_TYSubject.companyId = TY_TYStudent.companyId 
+				AND 
+				TY_TYClassStudent.courses = TY_TYStudentPoint.courses
+				AND
+				TY_TYClassStudent.studentId = TY_TYStudentPoint.studentId
+				AND
+				TY_TYClassStudent.classId = ?
+				
+			GROUP BY
+				studentId
+			HAVING avgPoint >= ? AND avgPoint < ?
+		)abc
+    ]]>
+  </sql>
+  
+  <sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.findByAVGPoint">
+    <![CDATA[
+		SELECT 
+			TY_TYStudentPoint.studentId AS studentId, 
+			(SUM(TY_TYPrioritySubject.extra*TY_TYStudentPoint.point*TY_TYStudentPoint.pointFactor)
+			/
+			SUM(TY_TYPrioritySubject.extra*TY_TYStudentPoint.pointFactor)) 
+			as avgPoint 
+		FROM 
+			TY_TYStudentPoint, TY_TYPrioritySubject, 
+			TY_TYStudent, TY_TYSubject
+		WHERE
+			TY_TYPrioritySubject.courses = TY_TYStudentPoint.courses
+			AND
+			TY_TYStudentPoint.courses = ? 
+			AND
+			TY_TYStudentPoint.semester = ? 
+			AND
+			TY_TYPrioritySubject.studentId = TY_TYStudentPoint.studentId
+			AND
+			TY_TYStudentPoint.studentId = ?
+			AND
+			TY_TYStudent.studentId = TY_TYStudentPoint.studentId
+			AND
+			TY_TYPrioritySubject.subjectId = TY_TYStudentPoint.subjectId
+			AND
+			TY_TYSubject.groupId = TY_TYStudent.groupId 
+			AND
+			TY_TYSubject.companyId = TY_TYStudent.companyId 
+		GROUP BY
+			TY_TYStudentPoint.studentId
+    ]]>
+  </sql>
+  
+  <sql file="custom-sql/class-student.xml" />
+  <sql file="custom-sql/student-point.xml" />
+  <sql file="custom-sql/student-conduct.xml" />
+  <sql file="custom-sql/class-user.xml" />
+  <sql file="custom-sql/subject-class-user.xml" />
+
+</custom-sql>

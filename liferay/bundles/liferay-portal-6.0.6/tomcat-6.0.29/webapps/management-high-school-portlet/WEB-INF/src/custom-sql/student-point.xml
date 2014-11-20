@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<custom-sql>
+	<sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.findStudentMissPointBy_C_S_S_PF_PT">
+		<![CDATA[
+			
+			SELECT DISTINCT
+					TY_TYStudentPoint.studentId as studentId 
+			FROM
+					TY_TYStudentPoint, TY_TYClassStudent
+			WHERE
+					TY_TYStudentPoint.courses = ?
+					AND
+					TY_TYStudentPoint.semester = ?
+					AND
+					TY_TYStudentPoint.subjectId = ?
+					AND
+					TY_TYClassStudent.courses = TY_TYStudentPoint.courses
+					AND
+					TY_TYClassStudent.studentId  = TY_TYStudentPoint.studentId 
+					AND 
+					TY_TYClassStudent.classId = ?
+					AND 
+					TY_TYStudentPoint.studentId NOT IN
+			
+			(SELECT DISTINCT
+					TY_TYStudentPoint.studentId
+			FROM
+					TY_TYStudentPoint, TY_TYClassStudent
+			WHERE
+					TY_TYStudentPoint.courses = ?
+					AND
+					TY_TYStudentPoint.semester = ?
+					AND
+					TY_TYStudentPoint.subjectId = ?
+					AND
+					TY_TYStudentPoint.pointFactor = ?
+					AND
+					TY_TYStudentPoint.pointType = ?
+					AND
+					TY_TYClassStudent.courses = TY_TYStudentPoint.courses 
+					AND
+					TY_TYClassStudent.studentId = TY_TYStudentPoint.studentId 
+					AND 
+					TY_TYClassStudent.classId = ?)
+		]]>
+	</sql>
+	
+	<sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.countStudentMissPointBy_C_S_S_PF_PT">
+		<![CDATA[
+			
+			SELECT COUNT(*) as count FROM
+			(
+				SELECT DISTINCT
+						TY_TYStudentPoint.studentId
+				FROM
+						TY_TYStudentPoint, TY_TYClassStudent
+				WHERE
+						TY_TYStudentPoint.courses = ?
+						AND
+						TY_TYStudentPoint.semester = ?
+						AND
+						TY_TYStudentPoint.subjectId = ?
+						AND
+						TY_TYClassStudent.courses = TY_TYStudentPoint.courses 
+						AND
+						TY_TYClassStudent.studentId = TY_TYStudentPoint.studentId 
+						AND 
+						TY_TYClassStudent.classId = ?
+						AND 
+						TY_TYStudentPoint.studentId 
+						NOT IN
+				
+				(SELECT DISTINCT
+						TY_TYStudentPoint.studentId
+				FROM
+						TY_TYStudentPoint, TY_TYClassStudent
+				WHERE
+						TY_TYStudentPoint.courses = ?
+						AND
+						TY_TYStudentPoint.semester = ?
+						AND
+						TY_TYStudentPoint.subjectId = ?
+						AND
+						TY_TYStudentPoint.pointFactor = ?
+						AND
+						TY_TYStudentPoint.pointType = ?
+						AND
+						TY_TYClassStudent.courses = TY_TYStudentPoint.courses 
+						AND
+						TY_TYClassStudent.studentId = TY_TYStudentPoint.studentId 
+						AND 
+						TY_TYClassStudent.classId = ?)
+			) abc
+
+		]]>
+	</sql>
+	
+	<sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.maxSemesterByC_G">
+		<![CDATA[
+				SELECT
+						MAX(TY_TYStudentPoint.semester) as max
+				FROM
+						TY_TYStudentPoint, TY_Semester
+				WHERE
+						TY_Semester.semesterId = TY_TYStudentPoint.semester 
+						AND
+						TY_Semester.companyId = ?
+						AND
+						TY_Semester.groupId = ?
+						AND
+						TY_TYStudentPoint.courses = ?
+		]]>
+	</sql>
+	
+</custom-sql>

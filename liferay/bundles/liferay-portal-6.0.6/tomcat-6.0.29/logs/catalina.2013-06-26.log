@@ -1,0 +1,218 @@
+Jun 26, 2013 9:55:51 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\liferay\bundles\liferay-portal-6.0.6\tomcat-6.0.29\jre1.6.0_20\win\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\liferay\apache-ant-1.8.4\bin;C:\Program Files\Java\jre7\bin;D:\velocity\velocity-1.7\build;D:\Program Files\QuickTime\QTSystem\;D:\Sax\lib;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;D:\Dev-Cpp\bin;C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;C:\Program Files (x86)\Microsoft Visual Studio\VC98\bin;D:\Program Files\VC98\Tools\WinNT;D:\Program Files\VC98\MSDev98\Bin;D:\Program Files\VC98\Tools;D:\Program Files\VB\Tools\WinNT;D:\Program Files\VB\MSDev98\Bin;D:\Program Files\VB\Tools;D:\Program Files\VC98\bin;D:\Program Files\AppServ\Apache2.2\bin;D:\Program Files\AppServ\php5;D:\Program Files\AppServ\MySQL\bin
+Jun 26, 2013 9:55:53 AM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jun 26, 2013 9:55:53 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2395 ms
+Jun 26, 2013 9:55:53 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jun 26, 2013 9:55:53 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.29
+Jun 26, 2013 9:55:53 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ROOT.xml
+Jun 26, 2013 9:57:54 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor send-receive-message-portlet.xml
+Jun 26, 2013 9:57:54 AM org.apache.catalina.startup.HostConfig deployDescriptor
+WARNING: A docBase D:\liferay\bundles\liferay-portal-6.0.6\tomcat-6.0.29\webapps\send-receive-message-portlet inside the host appBase has been specified, and will be ignored
+Jun 26, 2013 9:57:57 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory chat-portlet
+Jun 26, 2013 9:57:58 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory default-site-templates-hook
+Jun 26, 2013 9:57:59 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory google-maps-portlet
+Jun 26, 2013 9:57:59 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory kaleo-web
+Jun 26, 2013 9:58:03 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory mail-portlet
+Jun 26, 2013 9:58:05 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory opensocial-portlet
+Jun 26, 2013 9:58:13 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-hook
+Jun 26, 2013 9:58:13 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-mobile-theme
+Jun 26, 2013 9:58:14 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-theme
+Jun 26, 2013 9:58:15 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory social-networking-portlet
+Jun 26, 2013 9:58:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory tunnel-web
+Jun 26, 2013 9:58:19 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory web-form-portlet
+Jun 26, 2013 9:58:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory wsrp-portlet
+Jun 26, 2013 9:58:24 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory inkwell-internet-theme
+Jun 26, 2013 9:58:34 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory product-registration-portlet
+Jun 26, 2013 9:58:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory slogan-contest-portlet
+Jun 26, 2013 9:58:42 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory management-high-school-portlet
+Jun 26, 2013 9:58:45 AM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jun 26, 2013 9:58:45 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Jun 26, 2013 9:58:45 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=1/41  config=null
+Jun 26, 2013 9:58:45 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 172116 ms
+Jun 26, 2013 10:30:28 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 10:33:49 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 10:34:42 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 10:43:54 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 10:46:17 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 10:49:38 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 3:49:58 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 3:55:10 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 3:56:22 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 3:57:14 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 3:58:26 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 3:59:58 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:01:10 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:01:51 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:03:33 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:07:15 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:08:47 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:10:29 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:10:51 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:11:13 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:11:34 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:12:06 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:15:18 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:15:40 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:19:53 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:22:54 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:23:56 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:34:49 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:35:31 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:36:12 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:36:35 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:37:36 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:43:49 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:45:21 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:46:02 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:46:45 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:47:26 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:50:28 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:52:39 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:56:41 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 4:58:13 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:05:36 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:09:27 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:10:50 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:11:41 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:13:04 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:13:26 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:16:17 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:16:40 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:17:11 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:18:02 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:20:15 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:21:27 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:24:20 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:25:11 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:29:44 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:36:16 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:37:18 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:38:00 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:39:02 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:42:33 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:44:25 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:44:56 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:48:09 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:49:00 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:49:42 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:51:45 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:54:47 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:55:29 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 5:57:11 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 6:00:02 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 6:02:36 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 6:03:17 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 6:03:48 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 6:06:41 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 6:07:53 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 6:14:07 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 6:18:28 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 6:18:50 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 26, 2013 6:33:44 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]

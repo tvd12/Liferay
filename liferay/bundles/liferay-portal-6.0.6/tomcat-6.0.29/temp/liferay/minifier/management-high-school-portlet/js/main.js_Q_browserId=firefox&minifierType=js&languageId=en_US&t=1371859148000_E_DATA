@@ -1,0 +1,1 @@
+AUI().ready("aui-dialog","node",function(a){a.one("h3#type-point-role-title").on("click",function(){a.one("div#type-point-role-slide").slideUp("slow")})});

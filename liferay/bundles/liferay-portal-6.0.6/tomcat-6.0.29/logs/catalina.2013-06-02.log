@@ -1,0 +1,507 @@
+Jun 2, 2013 11:35:51 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\liferay\bundles\liferay-portal-6.0.6\tomcat-6.0.29\jre1.6.0_20\win\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\liferay\apache-ant-1.8.4\bin;C:\Program Files\Java\jre7\bin;D:\velocity\velocity-1.7\build;D:\Program Files\QuickTime\QTSystem\;D:\Sax\lib;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;D:\Dev-Cpp\bin;C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;C:\Program Files (x86)\Microsoft Visual Studio\VC98\bin;D:\Program Files\VC98\Tools\WinNT;D:\Program Files\VC98\MSDev98\Bin;D:\Program Files\VC98\Tools;D:\Program Files\VB\Tools\WinNT;D:\Program Files\VB\MSDev98\Bin;D:\Program Files\VB\Tools;D:\Program Files\VC98\bin;D:\Program Files\AppServ\Apache2.2\bin;D:\Program Files\AppServ\php5;D:\Program Files\AppServ\MySQL\bin
+Jun 2, 2013 11:35:51 AM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jun 2, 2013 11:35:51 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 994 ms
+Jun 2, 2013 11:35:52 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jun 2, 2013 11:35:52 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.29
+Jun 2, 2013 11:35:52 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ROOT.xml
+Jun 2, 2013 11:36:38 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor send-receive-message-portlet.xml
+Jun 2, 2013 11:36:38 AM org.apache.catalina.startup.HostConfig deployDescriptor
+WARNING: A docBase D:\liferay\bundles\liferay-portal-6.0.6\tomcat-6.0.29\webapps\send-receive-message-portlet inside the host appBase has been specified, and will be ignored
+Jun 2, 2013 11:36:41 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory chat-portlet
+Jun 2, 2013 11:36:42 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory default-site-templates-hook
+Jun 2, 2013 11:36:42 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory google-maps-portlet
+Jun 2, 2013 11:36:43 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory kaleo-web
+Jun 2, 2013 11:36:48 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory mail-portlet
+Jun 2, 2013 11:36:52 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory opensocial-portlet
+Jun 2, 2013 11:37:02 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-hook
+Jun 2, 2013 11:37:02 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-mobile-theme
+Jun 2, 2013 11:37:03 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-theme
+Jun 2, 2013 11:37:03 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory social-networking-portlet
+Jun 2, 2013 11:37:05 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory tunnel-web
+Jun 2, 2013 11:37:07 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory web-form-portlet
+Jun 2, 2013 11:37:08 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory wsrp-portlet
+Jun 2, 2013 11:37:11 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory inkwell-internet-theme
+Jun 2, 2013 11:37:23 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory product-registration-portlet
+Jun 2, 2013 11:37:26 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory slogan-contest-portlet
+Jun 2, 2013 11:37:29 AM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jun 2, 2013 11:37:29 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Jun 2, 2013 11:37:29 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=1/53  config=null
+Jun 2, 2013 11:37:29 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 97736 ms
+Jun 2, 2013 11:37:39 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory inkwell-shopping-hook
+Jun 2, 2013 11:37:39 AM org.apache.catalina.startup.TldConfig lifecycleEvent
+SEVERE: Error processing TLD files for context path /inkwell-shopping-hook
+javax.servlet.ServletException: Exception processing TLD at resource path /WEB-INF/tld/liferay-portlet.tld in context /inkwell-shopping-hook
+	at org.apache.catalina.startup.TldConfig.tldScanTld(TldConfig.java:438)
+	at org.apache.catalina.startup.TldConfig.execute(TldConfig.java:267)
+	at org.apache.catalina.startup.TldConfig.lifecycleEvent(TldConfig.java:634)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4540)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:791)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:771)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:546)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1041)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:964)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1345)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:303)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1337)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1601)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1610)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1590)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.lang.IllegalArgumentException: Invalid TLD resource path /WEB-INF/tld/liferay-portlet.tld
+	at org.apache.catalina.startup.TldConfig.tldScanTld(TldConfig.java:426)
+	... 18 more
+Jun 2, 2013 11:39:18 AM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Jun 2, 2013 11:39:19 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Jun 2, 2013 11:39:21 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/wsrp-portlet] created a ThreadLocal with key of type [org.apache.axis.utils.XMLUtils.ThreadLocalDocumentBuilder] (value [org.apache.axis.utils.XMLUtils$ThreadLocalDocumentBuilder@da243b]) and a value of type [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl] (value [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl@180c5ee]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Jun 2, 2013 11:39:21 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/opensocial-portlet] appears to have started a thread named [com.google.inject.internal.Finalizer] but has failed to stop it. This is very likely to create a memory leak.
+Jun 2, 2013 11:39:21 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/opensocial-portlet] created a ThreadLocal with key of type [null] (value [org.apache.shindig.common.xml.XmlUtil$2@1d3da65]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@1a73a8c]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Jun 2, 2013 11:39:21 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/opensocial-portlet] created a ThreadLocal with key of type [null] (value [com.google.inject.InjectorImpl$1@1f4bf33]) and a value of type [java.lang.Object[]] (value [[Ljava.lang.Object;@134da62]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Jun 2, 2013 11:39:21 AM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Jun 2, 2013 11:39:45 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\liferay\bundles\liferay-portal-6.0.6\tomcat-6.0.29\jre1.6.0_20\win\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\liferay\apache-ant-1.8.4\bin;C:\Program Files\Java\jre7\bin;D:\velocity\velocity-1.7\build;D:\Program Files\QuickTime\QTSystem\;D:\Sax\lib;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;D:\Dev-Cpp\bin;C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;C:\Program Files (x86)\Microsoft Visual Studio\VC98\bin;D:\Program Files\VC98\Tools\WinNT;D:\Program Files\VC98\MSDev98\Bin;D:\Program Files\VC98\Tools;D:\Program Files\VB\Tools\WinNT;D:\Program Files\VB\MSDev98\Bin;D:\Program Files\VB\Tools;D:\Program Files\VC98\bin;D:\Program Files\AppServ\Apache2.2\bin;D:\Program Files\AppServ\php5;D:\Program Files\AppServ\MySQL\bin
+Jun 2, 2013 11:39:45 AM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jun 2, 2013 11:39:45 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 402 ms
+Jun 2, 2013 11:39:45 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jun 2, 2013 11:39:45 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.29
+Jun 2, 2013 11:39:45 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ROOT.xml
+Jun 2, 2013 11:40:16 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor send-receive-message-portlet.xml
+Jun 2, 2013 11:40:16 AM org.apache.catalina.startup.HostConfig deployDescriptor
+WARNING: A docBase D:\liferay\bundles\liferay-portal-6.0.6\tomcat-6.0.29\webapps\send-receive-message-portlet inside the host appBase has been specified, and will be ignored
+Jun 2, 2013 11:40:17 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory chat-portlet
+Jun 2, 2013 11:40:18 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory default-site-templates-hook
+Jun 2, 2013 11:40:18 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory google-maps-portlet
+Jun 2, 2013 11:40:18 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory kaleo-web
+Jun 2, 2013 11:40:21 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory mail-portlet
+Jun 2, 2013 11:40:22 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory opensocial-portlet
+Jun 2, 2013 11:40:27 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-hook
+Jun 2, 2013 11:40:27 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-mobile-theme
+Jun 2, 2013 11:40:28 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-theme
+Jun 2, 2013 11:40:28 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory social-networking-portlet
+Jun 2, 2013 11:40:29 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory tunnel-web
+Jun 2, 2013 11:40:30 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory web-form-portlet
+Jun 2, 2013 11:40:31 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory wsrp-portlet
+Jun 2, 2013 11:40:33 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory inkwell-internet-theme
+Jun 2, 2013 11:40:35 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory product-registration-portlet
+Jun 2, 2013 11:40:36 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory slogan-contest-portlet
+Jun 2, 2013 11:40:38 AM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jun 2, 2013 11:40:38 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Jun 2, 2013 11:40:38 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/37  config=null
+Jun 2, 2013 11:40:38 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 53559 ms
+Jun 2, 2013 11:40:48 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory inkwell-shopping-hook
+Jun 2, 2013 11:40:48 AM org.apache.catalina.startup.TldConfig lifecycleEvent
+SEVERE: Error processing TLD files for context path /inkwell-shopping-hook
+javax.servlet.ServletException: Exception processing TLD at resource path /WEB-INF/tld/liferay-portlet.tld in context /inkwell-shopping-hook
+	at org.apache.catalina.startup.TldConfig.tldScanTld(TldConfig.java:438)
+	at org.apache.catalina.startup.TldConfig.execute(TldConfig.java:267)
+	at org.apache.catalina.startup.TldConfig.lifecycleEvent(TldConfig.java:634)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4540)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:791)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:771)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:546)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1041)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:964)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1345)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:303)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1337)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1601)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1610)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1590)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.lang.IllegalArgumentException: Invalid TLD resource path /WEB-INF/tld/liferay-portlet.tld
+	at org.apache.catalina.startup.TldConfig.tldScanTld(TldConfig.java:426)
+	... 18 more
+Jun 2, 2013 12:52:29 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Jun 2, 2013 12:52:30 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Jun 2, 2013 12:52:53 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/wsrp-portlet] created a ThreadLocal with key of type [org.apache.axis.utils.XMLUtils.ThreadLocalDocumentBuilder] (value [org.apache.axis.utils.XMLUtils$ThreadLocalDocumentBuilder@68333e]) and a value of type [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl] (value [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl@fc5bde]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Jun 2, 2013 12:52:56 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/opensocial-portlet] appears to have started a thread named [com.google.inject.internal.Finalizer] but has failed to stop it. This is very likely to create a memory leak.
+Jun 2, 2013 12:52:56 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/opensocial-portlet] created a ThreadLocal with key of type [null] (value [org.apache.shindig.common.xml.XmlUtil$2@144e094]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@f43d34]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Jun 2, 2013 12:52:56 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/opensocial-portlet] created a ThreadLocal with key of type [null] (value [com.google.inject.InjectorImpl$1@de3b0e]) and a value of type [java.lang.Object[]] (value [[Ljava.lang.Object;@1f73567]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Jun 2, 2013 12:52:56 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Jun 2, 2013 1:07:03 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\liferay\bundles\liferay-portal-6.0.6\tomcat-6.0.29\jre1.6.0_20\win\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\liferay\apache-ant-1.8.4\bin;C:\Program Files\Java\jre7\bin;D:\velocity\velocity-1.7\build;D:\Program Files\QuickTime\QTSystem\;D:\Sax\lib;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;D:\Dev-Cpp\bin;C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;C:\Program Files (x86)\Microsoft Visual Studio\VC98\bin;D:\Program Files\VC98\Tools\WinNT;D:\Program Files\VC98\MSDev98\Bin;D:\Program Files\VC98\Tools;D:\Program Files\VB\Tools\WinNT;D:\Program Files\VB\MSDev98\Bin;D:\Program Files\VB\Tools;D:\Program Files\VC98\bin;D:\Program Files\AppServ\Apache2.2\bin;D:\Program Files\AppServ\php5;D:\Program Files\AppServ\MySQL\bin
+Jun 2, 2013 1:07:04 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jun 2, 2013 1:07:04 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 995 ms
+Jun 2, 2013 1:07:04 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jun 2, 2013 1:07:04 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.29
+Jun 2, 2013 1:07:04 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ROOT.xml
+Jun 2, 2013 1:08:01 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor send-receive-message-portlet.xml
+Jun 2, 2013 1:08:01 PM org.apache.catalina.startup.HostConfig deployDescriptor
+WARNING: A docBase D:\liferay\bundles\liferay-portal-6.0.6\tomcat-6.0.29\webapps\send-receive-message-portlet inside the host appBase has been specified, and will be ignored
+Jun 2, 2013 1:08:05 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory chat-portlet
+Jun 2, 2013 1:08:07 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory default-site-templates-hook
+Jun 2, 2013 1:08:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory google-maps-portlet
+Jun 2, 2013 1:08:09 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory kaleo-web
+Jun 2, 2013 1:08:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory mail-portlet
+Jun 2, 2013 1:08:18 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory opensocial-portlet
+Jun 2, 2013 1:08:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-hook
+Jun 2, 2013 1:08:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-mobile-theme
+Jun 2, 2013 1:08:40 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-theme
+Jun 2, 2013 1:08:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory social-networking-portlet
+Jun 2, 2013 1:08:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory tunnel-web
+Jun 2, 2013 1:08:45 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory web-form-portlet
+Jun 2, 2013 1:08:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory wsrp-portlet
+Jun 2, 2013 1:08:51 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory inkwell-internet-theme
+Jun 2, 2013 1:09:03 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory product-registration-portlet
+Jun 2, 2013 1:09:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory slogan-contest-portlet
+Jun 2, 2013 1:09:10 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory inkwell-shopping-hook
+Jun 2, 2013 1:09:19 PM org.apache.catalina.startup.TldConfig lifecycleEvent
+SEVERE: Error processing TLD files for context path /inkwell-shopping-hook
+javax.servlet.ServletException: Exception processing TLD at resource path /WEB-INF/tld/liferay-portlet.tld in context /inkwell-shopping-hook
+	at org.apache.catalina.startup.TldConfig.tldScanTld(TldConfig.java:438)
+	at org.apache.catalina.startup.TldConfig.execute(TldConfig.java:267)
+	at org.apache.catalina.startup.TldConfig.lifecycleEvent(TldConfig.java:634)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4540)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:791)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:771)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:546)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1041)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:964)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1277)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:321)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1053)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:785)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1045)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:445)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:519)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:710)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:581)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+Caused by: java.lang.IllegalArgumentException: Invalid TLD resource path /WEB-INF/tld/liferay-portlet.tld
+	at org.apache.catalina.startup.TldConfig.tldScanTld(TldConfig.java:426)
+	... 26 more
+Jun 2, 2013 1:09:21 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jun 2, 2013 1:09:21 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Jun 2, 2013 1:09:21 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/120  config=null
+Jun 2, 2013 1:09:21 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 137068 ms
+Jun 2, 2013 1:09:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory management-tphtty-porlet-portlet
+Jun 2, 2013 4:32:13 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Jun 2, 2013 4:32:14 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Jun 2, 2013 4:32:21 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/wsrp-portlet] created a ThreadLocal with key of type [org.apache.axis.utils.XMLUtils.ThreadLocalDocumentBuilder] (value [org.apache.axis.utils.XMLUtils$ThreadLocalDocumentBuilder@6736dc]) and a value of type [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl] (value [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl@42de24]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Jun 2, 2013 4:32:22 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/opensocial-portlet] appears to have started a thread named [com.google.inject.internal.Finalizer] but has failed to stop it. This is very likely to create a memory leak.
+Jun 2, 2013 4:32:22 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/opensocial-portlet] created a ThreadLocal with key of type [null] (value [com.google.inject.InjectorImpl$1@b1c93f]) and a value of type [java.lang.Object[]] (value [[Ljava.lang.Object;@1352bc]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Jun 2, 2013 4:32:22 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/opensocial-portlet] created a ThreadLocal with key of type [null] (value [org.apache.shindig.common.xml.XmlUtil$2@9cef26]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@118d229]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Jun 2, 2013 4:32:22 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Jun 2, 2013 5:37:02 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\liferay\bundles\liferay-portal-6.0.6\tomcat-6.0.29\jre1.6.0_20\win\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\liferay\apache-ant-1.8.4\bin;C:\Program Files\Java\jre7\bin;D:\velocity\velocity-1.7\build;D:\Program Files\QuickTime\QTSystem\;D:\Sax\lib;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;D:\Dev-Cpp\bin;C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;C:\Program Files (x86)\Microsoft Visual Studio\VC98\bin;D:\Program Files\VC98\Tools\WinNT;D:\Program Files\VC98\MSDev98\Bin;D:\Program Files\VC98\Tools;D:\Program Files\VB\Tools\WinNT;D:\Program Files\VB\MSDev98\Bin;D:\Program Files\VB\Tools;D:\Program Files\VC98\bin;D:\Program Files\AppServ\Apache2.2\bin;D:\Program Files\AppServ\php5;D:\Program Files\AppServ\MySQL\bin
+Jun 2, 2013 5:37:03 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jun 2, 2013 5:37:03 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1879 ms
+Jun 2, 2013 5:37:03 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jun 2, 2013 5:37:03 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.29
+Jun 2, 2013 5:37:04 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ROOT.xml
+Jun 2, 2013 5:37:55 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor send-receive-message-portlet.xml
+Jun 2, 2013 5:37:55 PM org.apache.catalina.startup.HostConfig deployDescriptor
+WARNING: A docBase D:\liferay\bundles\liferay-portal-6.0.6\tomcat-6.0.29\webapps\send-receive-message-portlet inside the host appBase has been specified, and will be ignored
+Jun 2, 2013 5:37:58 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory chat-portlet
+Jun 2, 2013 5:38:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory default-site-templates-hook
+Jun 2, 2013 5:38:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory google-maps-portlet
+Jun 2, 2013 5:38:02 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory kaleo-web
+Jun 2, 2013 5:38:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory mail-portlet
+Jun 2, 2013 5:38:11 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory opensocial-portlet
+Jun 2, 2013 5:38:21 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-hook
+Jun 2, 2013 5:38:21 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-mobile-theme
+Jun 2, 2013 5:38:21 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-theme
+Jun 2, 2013 5:38:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory social-networking-portlet
+Jun 2, 2013 5:38:24 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory tunnel-web
+Jun 2, 2013 5:38:26 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory web-form-portlet
+Jun 2, 2013 5:38:28 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory wsrp-portlet
+Jun 2, 2013 5:38:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory inkwell-internet-theme
+Jun 2, 2013 5:38:42 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory product-registration-portlet
+Jun 2, 2013 5:38:45 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory slogan-contest-portlet
+Jun 2, 2013 5:38:49 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory inkwell-shopping-hook
+Jun 2, 2013 5:38:49 PM org.apache.catalina.startup.TldConfig lifecycleEvent
+SEVERE: Error processing TLD files for context path /inkwell-shopping-hook
+javax.servlet.ServletException: Exception processing TLD at resource path /WEB-INF/tld/liferay-portlet.tld in context /inkwell-shopping-hook
+	at org.apache.catalina.startup.TldConfig.tldScanTld(TldConfig.java:438)
+	at org.apache.catalina.startup.TldConfig.execute(TldConfig.java:267)
+	at org.apache.catalina.startup.TldConfig.lifecycleEvent(TldConfig.java:634)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4540)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:791)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:771)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:546)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1041)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:964)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1277)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:321)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1053)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:785)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1045)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:445)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:519)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:710)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:581)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+Caused by: java.lang.IllegalArgumentException: Invalid TLD resource path /WEB-INF/tld/liferay-portlet.tld
+	at org.apache.catalina.startup.TldConfig.tldScanTld(TldConfig.java:426)
+	... 26 more
+Jun 2, 2013 5:38:50 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory management-tphtty-porlet-portlet
+Jun 2, 2013 5:38:51 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jun 2, 2013 5:38:51 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Jun 2, 2013 5:38:51 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/29  config=null
+Jun 2, 2013 5:38:51 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 108277 ms
+Jun 2, 2013 5:39:32 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/inkwell-shopping-hook]
+Jun 2, 2013 5:40:32 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-tphtty-porlet-portlet]
+Jun 2, 2013 5:42:33 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-tphtty-porlet-portlet]
+Jun 2, 2013 5:45:15 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-tphtty-porlet-portlet]
+Jun 2, 2013 5:48:45 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Jun 2, 2013 5:48:46 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Jun 2, 2013 5:48:48 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/wsrp-portlet] created a ThreadLocal with key of type [org.apache.axis.utils.XMLUtils.ThreadLocalDocumentBuilder] (value [org.apache.axis.utils.XMLUtils$ThreadLocalDocumentBuilder@1ba04f8]) and a value of type [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl] (value [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl@19c5156]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Jun 2, 2013 5:48:48 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/opensocial-portlet] appears to have started a thread named [com.google.inject.internal.Finalizer] but has failed to stop it. This is very likely to create a memory leak.
+Jun 2, 2013 5:48:48 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/opensocial-portlet] created a ThreadLocal with key of type [null] (value [org.apache.shindig.common.xml.XmlUtil$2@1c39acc]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@e7d658]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Jun 2, 2013 5:48:48 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/opensocial-portlet] created a ThreadLocal with key of type [null] (value [com.google.inject.InjectorImpl$1@a93621]) and a value of type [java.lang.Object[]] (value [[Ljava.lang.Object;@120b0dd]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Jun 2, 2013 5:48:48 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Jun 2, 2013 5:52:49 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: D:\liferay\bundles\liferay-portal-6.0.6\tomcat-6.0.29\jre1.6.0_20\win\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\liferay\apache-ant-1.8.4\bin;C:\Program Files\Java\jre7\bin;D:\velocity\velocity-1.7\build;D:\Program Files\QuickTime\QTSystem\;D:\Sax\lib;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;D:\Dev-Cpp\bin;C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;C:\Program Files (x86)\Microsoft Visual Studio\VC98\bin;D:\Program Files\VC98\Tools\WinNT;D:\Program Files\VC98\MSDev98\Bin;D:\Program Files\VC98\Tools;D:\Program Files\VB\Tools\WinNT;D:\Program Files\VB\MSDev98\Bin;D:\Program Files\VB\Tools;D:\Program Files\VC98\bin;D:\Program Files\AppServ\Apache2.2\bin;D:\Program Files\AppServ\php5;D:\Program Files\AppServ\MySQL\bin
+Jun 2, 2013 5:52:50 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jun 2, 2013 5:52:50 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 378 ms
+Jun 2, 2013 5:52:50 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jun 2, 2013 5:52:50 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.29
+Jun 2, 2013 5:52:50 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ROOT.xml
+Jun 2, 2013 5:53:23 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor send-receive-message-portlet.xml
+Jun 2, 2013 5:53:23 PM org.apache.catalina.startup.HostConfig deployDescriptor
+WARNING: A docBase D:\liferay\bundles\liferay-portal-6.0.6\tomcat-6.0.29\webapps\send-receive-message-portlet inside the host appBase has been specified, and will be ignored
+Jun 2, 2013 5:53:24 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory chat-portlet
+Jun 2, 2013 5:53:25 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory default-site-templates-hook
+Jun 2, 2013 5:53:25 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory google-maps-portlet
+Jun 2, 2013 5:53:25 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory kaleo-web
+Jun 2, 2013 5:53:28 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory mail-portlet
+Jun 2, 2013 5:53:30 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory opensocial-portlet
+Jun 2, 2013 5:53:35 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-hook
+Jun 2, 2013 5:53:35 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-mobile-theme
+Jun 2, 2013 5:53:35 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-theme
+Jun 2, 2013 5:53:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory social-networking-portlet
+Jun 2, 2013 5:53:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory tunnel-web
+Jun 2, 2013 5:53:38 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory web-form-portlet
+Jun 2, 2013 5:53:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory wsrp-portlet
+Jun 2, 2013 5:53:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory inkwell-internet-theme
+Jun 2, 2013 5:53:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory product-registration-portlet
+Jun 2, 2013 5:53:45 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory slogan-contest-portlet
+Jun 2, 2013 5:53:47 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jun 2, 2013 5:53:47 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Jun 2, 2013 5:53:47 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/23  config=null
+Jun 2, 2013 5:53:47 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 57125 ms
+Jun 2, 2013 5:53:57 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory inkwell-shopping-hook
+Jun 2, 2013 5:53:57 PM org.apache.catalina.startup.TldConfig lifecycleEvent
+SEVERE: Error processing TLD files for context path /inkwell-shopping-hook
+javax.servlet.ServletException: Exception processing TLD at resource path /WEB-INF/tld/liferay-portlet.tld in context /inkwell-shopping-hook
+	at org.apache.catalina.startup.TldConfig.tldScanTld(TldConfig.java:438)
+	at org.apache.catalina.startup.TldConfig.execute(TldConfig.java:267)
+	at org.apache.catalina.startup.TldConfig.lifecycleEvent(TldConfig.java:634)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4540)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:791)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:771)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:546)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1041)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:964)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:502)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1345)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:303)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1337)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1601)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1610)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1590)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.lang.IllegalArgumentException: Invalid TLD resource path /WEB-INF/tld/liferay-portlet.tld
+	at org.apache.catalina.startup.TldConfig.tldScanTld(TldConfig.java:426)
+	... 18 more
+Jun 2, 2013 5:57:08 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/inkwell-shopping-hook]
+Jun 2, 2013 6:02:19 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory management-high-school-portlet
+Jun 2, 2013 6:02:39 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jun 2, 2013 6:05:00 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]

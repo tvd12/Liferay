@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_0_0.dtd">
+
+<service-builder package-path="org.tvd.thptty.slogan">
+	<author>HelloNhungEm</author>
+	<namespace>TVDSlogan</namespace>
+	<entity name="Slogan" uuid="true" local-service="true" remote-service="false">
+		<column name="sloganId" type="long" primary="true"></column>
+		<column name="sloganDate" type="Date"></column>
+		<column name="sloganText" type="String"></column>
+		<column name="status" type="int"></column>
+		<column name="statusByUserId" type="long"></column>
+		<column name="statusByUserName" type="String"></column>
+		<column name="statusDate" type="Date"></column>
+		<!-- Foreign Keys -->
+		<column name="companyId" type="long"></column>
+		<column name="groupId" type="long"></column>
+		<column name="userId" type="long"></column>
+		<!--  Order -->
+		<order>
+			<order-column name="sloganId" order-by="asc"></order-column>
+			<order-column name="sloganDate" order-by="desc"></order-column>
+		</order>
+		<finder name="GroupId" return-type="Collection">
+			<finder-column name="groupId"></finder-column>
+		</finder>
+		<finder name="CompanyId" return-type="Collection">
+			<finder-column name="companyId"></finder-column>
+		</finder>
+		<finder name="SloganText" return-type="Collection">
+			<finder-column name="sloganText"></finder-column>
+		</finder>
+		<finder name="G_S" return-type="Collection">
+			<finder-column name="groupId"></finder-column>
+			<finder-column name="status"></finder-column>
+		</finder>
+		<reference package-path="com.liferay.portal" entity="User"></reference>
+		<reference package-path="com.liferay.portlet.asset" entity="AssetEntry"></reference>
+		<reference package-path="com.liferay.portlet.ratings" entity="RatingsStats"></reference>
+	</entity>
+</service-builder>

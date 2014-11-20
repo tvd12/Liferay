@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE look-and-feel PUBLIC "-//Liferay//DTD Look and Feel 6.0.0//EN" "http://www.liferay.com/dtd/liferay-look-and-feel_6_0_0.dtd">
+
+<look-and-feel>
+	<compatibility>
+		<version>6.0.6+</version>
+	</compatibility>
+	<theme id="html5-initializr" name="HTML5 Initializr"></theme>
+</look-and-feel>

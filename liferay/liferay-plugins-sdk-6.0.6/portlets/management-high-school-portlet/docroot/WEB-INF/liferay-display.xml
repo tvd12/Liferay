@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE display PUBLIC "-//Liferay//DTD Display 6.0.0//EN" "http://www.liferay.com/dtd/liferay-display_6_0_0.dtd">
+
+<display>
+	<category name="category.hidden">
+		<portlet id="management-class" />
+	</category>
+	<category name="category.sample">
+		<portlet id="student-public" />
+		<portlet id="teacher-admin" />
+		<portlet id="management-class" />
+		<portlet id="subject-admin" />
+		<portlet id="carousel-navigator" />
+		<portlet id="clock-flash-portlet" />
+		<portlet id="tvd-charts-portlet" />
+		<portlet id="tvd-student-statistics-portlet"></portlet>
+	</category>
+	<category name="category.tools">
+		<portlet id="tvd-student-login-portlet" />
+	</category>
+</display>

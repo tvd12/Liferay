@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<custom-sql>
+	<sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.findStudentClassByCourse_Group">
+		<![CDATA[
+			
+			SELECT 	
+					TY_TYClassStudent.studentId as studentId, 
+					TY_TYClassStudent.classId as classId 
+			FROM
+					TY_TYClassStudent, TY_TYStudent, TY_TYClass
+			WHERE
+					TY_TYClassStudent.courses = ?
+					AND
+					TY_TYStudent.studentId = TY_TYClassStudent.studentId 
+					AND
+					TY_TYStudent.companyId = ?
+					AND
+					TY_TYStudent.groupId = ?
+					AND
+					TY_TYClass.classId = TY_TYClassStudent.classId
+					AND
+					TY_TYClass.classGroup < ?
+					AND 
+					TY_TYClass.companyId = TY_TYStudent.companyId
+					AND
+					TY_TYClass.groupId = TY_TYStudent.groupId
+		]]>
+	</sql>
+	
+	<sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.countStudentClassByCourse_Group">
+		<![CDATA[
+			
+			SELECT 	
+					COUNT(*) as count
+			FROM
+					TY_TYClassStudent, TY_TYStudent, TY_TYClass
+			WHERE
+					TY_TYClassStudent.courses = ?
+					AND
+					TY_TYStudent.studentId = TY_TYClassStudent.studentId
+					AND
+					TY_TYStudent.companyId = ?
+					AND
+					TY_TYStudent.groupId = ?
+					AND
+					TY_TYClass.classId = TY_TYClassStudent.classId
+					AND
+					TY_TYClass.classGroup < ?
+					AND
+					TY_TYClass.companyId = TY_TYStudent.companyId
+					AND
+					TY_TYClass.groupId = TY_TYStudent.groupId
+		]]>
+	</sql>
+</custom-sql>

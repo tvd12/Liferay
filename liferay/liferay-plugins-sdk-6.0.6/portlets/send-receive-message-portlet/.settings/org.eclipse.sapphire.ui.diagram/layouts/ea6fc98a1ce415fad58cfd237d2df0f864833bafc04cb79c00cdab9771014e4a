@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram-geometry>
+    <node>
+        <id>Entity#MSMessage#0</id>
+        <bounds x="36" y="36"/>
+    </node>
+    <node>
+        <id>Entity#MSMSender#1</id>
+        <bounds x="173" y="36"/>
+    </node>
+    <node>
+        <id>Entity#MSMReceiver#2</id>
+        <bounds x="310" y="36"/>
+    </node>
+</diagram-geometry>

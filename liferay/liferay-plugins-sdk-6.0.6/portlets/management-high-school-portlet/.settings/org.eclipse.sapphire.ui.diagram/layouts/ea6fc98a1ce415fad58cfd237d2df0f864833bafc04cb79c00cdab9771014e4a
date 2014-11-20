@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram-geometry>
+    <node>
+        <id>Entity#TYClass#0</id>
+        <bounds x="173" y="36"/>
+    </node>
+    <node>
+        <id>Entity#TYStudent#1</id>
+        <bounds x="36" y="174"/>
+    </node>
+    <node>
+        <id>Entity#TYClassStudent#2</id>
+        <bounds x="36" y="36"/>
+    </node>
+    <node>
+        <id>Entity#TYClassUserRole#3</id>
+        <bounds x="173" y="174"/>
+    </node>
+    <node>
+        <id>Entity#TYSubject#4</id>
+        <bounds x="310" y="174"/>
+    </node>
+    <node>
+        <id>Entity#TYSubjectUserRole#5</id>
+        <bounds x="10" y="250"/>
+    </node>
+    <node>
+        <id>Entity#TYTeacher#6</id>
+        <bounds x="10" y="326"/>
+    </node>
+    <node>
+        <id>Entity#TYStudentPointReserve#7</id>
+        <bounds x="10" y="402"/>
+    </node>
+    <node>
+        <id>Entity#TYStudentPoint#8</id>
+        <bounds x="10" y="478"/>
+    </node>
+    <node>
+        <id>Entity#TYStudentConduct#9</id>
+        <bounds x="10" y="554"/>
+    </node>
+    <node>
+        <id>Entity#TYSubjectClassUserRole#10</id>
+        <bounds x="10" y="630"/>
+    </node>
+    <node>
+        <id>Entity#TYPrioritySubject#11</id>
+        <bounds x="10" y="706"/>
+    </node>
+    <node>
+        <id>Entity#Semester#12</id>
+        <bounds x="10" y="782"/>
+    </node>
+    <node>
+        <id>Entity#TYMessages#13</id>
+        <bounds x="10" y="858"/>
+    </node>
+</diagram-geometry>

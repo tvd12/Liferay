@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<custom-sql>
+
+  <sql id="org.tvd.thptty.slogan.service.persistence.SloganFinder.findByRatingsStats">
+    <![CDATA[
+        SELECT
+            RatingsStats.averageScore AS averageScore,
+            TVDSlogan_Slogan.sloganId AS sloganId,
+            TVDSlogan_Slogan.sloganText AS sloganText
+        FROM
+            RatingsStats, TVDSlogan_Slogan
+        WHERE
+            (TVDSlogan_Slogan.groupId = ?) AND
+            (TVDSlogan_Slogan.status = ?) AND
+            (RatingsStats.classNameId = ?) AND
+            (TVDSlogan_Slogan.sloganId = RatingsStats.classPK)
+        ORDER BY
+            RatingsStats.averageScore
+        DESC
+    ]]>
+  </sql>
+
+</custom-sql>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="org.tvd.thptty.model.TYClass" />
+	<import class="org.tvd.thptty.model.TYStudent" />
+	<import class="org.tvd.thptty.model.TYClassStudent" />
+	<import class="org.tvd.thptty.model.TYClassUserRole" />
+	<import class="org.tvd.thptty.model.TYSubject" />
+	<import class="org.tvd.thptty.model.TYSubjectUserRole" />
+	<import class="org.tvd.thptty.model.TYTeacher" />
+	<import class="org.tvd.thptty.model.TYStudentPointReserve" />
+	<import class="org.tvd.thptty.model.TYStudentPoint" />
+	<import class="org.tvd.thptty.model.TYStudentConduct" />
+	<import class="org.tvd.thptty.model.TYSubjectClassUserRole" />
+	<import class="org.tvd.thptty.model.TYPrioritySubject" />
+	<import class="org.tvd.thptty.model.Semester" />
+	<import class="org.tvd.thptty.model.TYMessages" />
+	<class name="org.tvd.thptty.model.impl.TYClassImpl" table="TY_TYClass">
+		<cache usage="read-write" />
+		<id name="classId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="classCode" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="classGroup" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="className" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="org.tvd.thptty.model.impl.TYStudentImpl" table="TY_TYStudent">
+		<cache usage="read-write" />
+		<id name="studentId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="studentLastName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="studentFirstName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="studentGroup1" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="studentGroup2" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="studentGroup3" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="male" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property name="birthDay" type="org.hibernate.type.TimestampType" />
+		<property name="emailAddress" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="emailPassword" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="address" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="fatherName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="fatherPhone" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="motherName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="motherPhone" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="studentCode" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="loginCount" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="dateLogin" type="org.hibernate.type.TimestampType" />
+		<property name="passwordEncrypt" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property name="question" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="answer" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="regId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="org.tvd.thptty.model.impl.TYClassStudentImpl" table="TY_TYClassStudent">
+		<cache usage="read-write" />
+		<composite-id name="primaryKey" class="org.tvd.thptty.service.persistence.TYClassStudentPK">
+			<key-property name="courses" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+			<key-property name="studentId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+		<property name="classId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="org.tvd.thptty.model.impl.TYClassUserRoleImpl" table="TY_TYClassUserRole">
+		<cache usage="read-write" />
+		<composite-id name="primaryKey" class="org.tvd.thptty.service.persistence.TYClassUserRolePK">
+			<key-property name="courses" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+			<key-property name="classId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property name="roleId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+		<property name="status" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+	</class>
+	<class name="org.tvd.thptty.model.impl.TYSubjectImpl" table="TY_TYSubject">
+		<cache usage="read-write" />
+		<id name="subjectId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="subjectCode" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="subjectName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="description" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="org.tvd.thptty.model.impl.TYSubjectUserRoleImpl" table="TY_TYSubjectUserRole">
+		<cache usage="read-write" />
+		<composite-id name="primaryKey" class="org.tvd.thptty.service.persistence.TYSubjectUserRolePK">
+			<key-property name="courses" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+			<key-property name="subjectId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property name="roleId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+	</class>
+	<class name="org.tvd.thptty.model.impl.TYTeacherImpl" table="TY_TYTeacher">
+		<cache usage="read-write" />
+		<id name="teacherId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="teacherDegree" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="teacherCertificate" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="org.tvd.thptty.model.impl.TYStudentPointReserveImpl" table="TY_TYStudentPointReserve">
+		<cache usage="read-write" />
+		<composite-id name="primaryKey" class="org.tvd.thptty.service.persistence.TYStudentPointReservePK">
+			<key-property name="courses" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+			<key-property name="semester" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+			<key-property name="studentId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property name="subjectId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property name="pointType" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+			<key-property name="pointIndex" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+			<key-property name="pointFactor" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		</composite-id>
+		<property name="point" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="org.tvd.thptty.model.impl.TYStudentPointImpl" table="TY_TYStudentPoint">
+		<cache usage="read-write" />
+		<composite-id name="primaryKey" class="org.tvd.thptty.service.persistence.TYStudentPointPK">
+			<key-property name="courses" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+			<key-property name="semester" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+			<key-property name="studentId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property name="subjectId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property name="pointType" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+			<key-property name="pointIndex" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+			<key-property name="pointFactor" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		</composite-id>
+		<property name="point" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="org.tvd.thptty.model.impl.TYStudentConductImpl" table="TY_TYStudentConduct">
+		<cache usage="read-write" />
+		<composite-id name="primaryKey" class="org.tvd.thptty.service.persistence.TYStudentConductPK">
+			<key-property name="courses" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+			<key-property name="semester" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+			<key-property name="studentId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+		<property name="conduct" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="org.tvd.thptty.model.impl.TYSubjectClassUserRoleImpl" table="TY_TYSubjectClassUserRole">
+		<cache usage="read-write" />
+		<composite-id name="primaryKey" class="org.tvd.thptty.service.persistence.TYSubjectClassUserRolePK">
+			<key-property name="courses" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+			<key-property name="subjectId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property name="classId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property name="roleId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+		<property name="status" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+	</class>
+	<class name="org.tvd.thptty.model.impl.TYPrioritySubjectImpl" table="TY_TYPrioritySubject">
+		<cache usage="read-write" />
+		<composite-id name="primaryKey" class="org.tvd.thptty.service.persistence.TYPrioritySubjectPK">
+			<key-property name="courses" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+			<key-property name="subjectId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property name="studentId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+		<property name="isSpecial" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property name="extra" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+	</class>
+	<class name="org.tvd.thptty.model.impl.SemesterImpl" table="TY_Semester">
+		<cache usage="read-write" />
+		<composite-id name="primaryKey" class="org.tvd.thptty.service.persistence.SemesterPK">
+			<key-property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property name="semesterId" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		</composite-id>
+		<property name="status" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+	</class>
+	<class name="org.tvd.thptty.model.impl.TYMessagesImpl" table="TY_TYMessages">
+		<cache usage="read-write" />
+		<id name="messageId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="actionId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="classId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="subjectId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="happenDate" type="org.hibernate.type.TimestampType" />
+	</class>
+</hibernate-mapping>

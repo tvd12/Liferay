@@ -1,0 +1,1 @@
+AUI().ready(function(){});Liferay.Portlet.ready(function(a,b){});Liferay.on("allPortletsReady",function(){});function showProduct(c,a){try{document.getElementById(c).style.backgroundImage="url('"+a+"')"}catch(b){console.log(b)}};

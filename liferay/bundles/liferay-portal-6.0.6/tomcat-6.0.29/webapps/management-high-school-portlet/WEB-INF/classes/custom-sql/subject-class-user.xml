@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<custom-sql>
+	<sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.findSubjectClassesUserRoleByC_R">
+		<![CDATA[
+			
+			SELECT 	
+					TY_TYSubjectClassUserRole.subjectId AS subjectId,
+					TY_TYSubjectClassUserRole.classId AS classId,
+					TY_TYSubjectClassUserRole.userId AS userId,
+					TY_TYSubjectClassUserRole.roleId AS roleId,
+					TY_TYSubjectClassUserRole.status AS status
+			FROM
+					TY_TYSubjectClassUserRole, TY_TYSubject, 
+					TY_TYClass, User_, Users_Groups
+			WHERE
+					TY_TYSubjectClassUserRole.courses = ?
+					AND
+					TY_TYClass.classId = TY_TYSubjectClassUserRole.classId 
+					AND
+					TY_TYClass.companyId = ?
+					AND
+					TY_TYClass.groupId = ?
+					AND
+					TY_TYClass.companyId = User_.companyId
+					AND
+					TY_TYSubjectClassUserRole.userId = User_.userId
+					AND
+					User_.userId = Users_Groups.userId
+					AND
+					Users_Groups.groupId = TY_TYClass.groupId 
+					AND
+					TY_TYSubjectClassUserRole.roleId = ?
+					AND
+					TY_TYSubject.subjectId = TY_TYSubjectClassUserRole.subjectId 
+					AND
+					TY_TYSubject.companyId = User_.companyId
+					AND
+					TY_TYSubject.groupId = Users_Groups.groupId
+		]]>
+	</sql>
+	
+	<sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.countSubjectClassesUserRoleByC_R">
+		<![CDATA[
+			
+			SELECT 	
+					COUNT(*) AS count
+			FROM
+					TY_TYSubjectClassUserRole, TY_TYSubject, 
+					TY_TYClass, User_, Users_Groups
+			WHERE
+					TY_TYSubjectClassUserRole.courses = ?
+					AND
+					TY_TYClass.classId = TY_TYSubjectClassUserRole.classId 
+					AND
+					TY_TYClass.companyId = ?
+					AND
+					TY_TYClass.groupId = ?
+					AND
+					User_.companyId = TY_TYClass.companyId 
+					AND
+					TY_TYSubjectClassUserRole.userId = User_.userId
+					AND
+					User_.userId = Users_Groups.userId
+					AND
+					Users_Groups.groupId = TY_TYClass.groupId 
+					AND
+					TY_TYSubjectClassUserRole.roleId = ?
+					AND
+					TY_TYSubject.subjectId = TY_TYSubjectClassUserRole.subjectId 
+					AND
+					TY_TYSubject.companyId = User_.companyId
+					AND
+					TY_TYSubject.groupId = Users_Groups.groupId
+		]]>
+	</sql>
+	
+	<sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.findSubjectClassesUserRoleByCourse">
+		<![CDATA[
+			
+			SELECT 	
+					TY_TYSubjectClassUserRole.subjectId AS subjectId,
+					TY_TYSubjectClassUserRole.classId AS classId,
+					TY_TYSubjectClassUserRole.userId AS userId,
+					TY_TYSubjectClassUserRole.roleId as roleId,
+					TY_TYSubjectClassUserRole.status AS status
+			FROM
+					TY_TYSubjectClassUserRole, TY_TYSubject, 
+					TY_TYClass, User_, Users_Groups
+			WHERE
+					TY_TYSubjectClassUserRole.courses = ?
+					AND
+					TY_TYClass.classId = TY_TYSubjectClassUserRole.classId 
+					AND
+					TY_TYClass.companyId = ?
+					AND
+					TY_TYClass.groupId = ?
+					AND
+					User_.companyId = TY_TYClass.companyId 
+					AND
+					TY_TYSubjectClassUserRole.userId = User_.userId
+					AND
+					User_.userId = Users_Groups.userId
+					AND
+					Users_Groups.groupId = TY_TYClass.groupId 
+					AND
+					TY_TYSubject.subjectId = TY_TYSubjectClassUserRole.subjectId 
+					AND
+					TY_TYSubject.companyId = User_.companyId
+					AND
+					TY_TYSubject.groupId = Users_Groups.groupId
+		]]>
+	</sql>
+	
+	<sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.countSubjectClassesUserRoleByCourse">
+		<![CDATA[
+			
+			SELECT 	
+					COUNT(*) as count
+			FROM
+					TY_TYSubjectClassUserRole, TY_TYSubject, 
+					TY_TYClass, User_, Users_Groups
+			WHERE
+					TY_TYSubjectClassUserRole.courses = ?
+					AND
+					TY_TYClass.classId = TY_TYSubjectClassUserRole.classId 
+					AND
+					TY_TYClass.companyId = ?
+					AND
+					TY_TYClass.groupId = ?
+					AND
+					User_.companyId = TY_TYClass.companyId
+					AND
+					TY_TYSubjectClassUserRole.userId = User_.userId
+					AND
+					User_.userId = Users_Groups.userId
+					AND
+					Users_Groups.groupId = TY_TYClass.groupId
+					AND
+					TY_TYSubject.subjectId = TY_TYSubjectClassUserRole.subjectId 
+					AND
+					TY_TYSubject.companyId = User_.companyId
+					AND
+					TY_TYSubject.groupId = Users_Groups.groupId
+		]]>
+	</sql>
+</custom-sql>

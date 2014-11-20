@@ -1,0 +1,228 @@
+Jul 31, 2013 6:55:49 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 6:58:12 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/tvd-slogan-contest-portlet]
+Jul 31, 2013 6:58:13 AM org.apache.catalina.loader.WebappClassLoader findResourceInternal
+INFO: Illegal access: this web application instance has been stopped already.  Could not load META-INF/services/org.apache.axis.EngineConfigurationFactory.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+Jul 31, 2013 6:58:13 AM org.apache.catalina.loader.WebappClassLoader findResourceInternal
+INFO: Illegal access: this web application instance has been stopped already.  Could not load org/apache/axis/configuration/EngineConfigurationFactoryServlet.class.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+Jul 31, 2013 6:58:23 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 6:58:25 AM org.apache.catalina.loader.WebappClassLoader findResourceInternal
+INFO: Illegal access: this web application instance has been stopped already.  Could not load META-INF/services/org.apache.axis.EngineConfigurationFactory.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+Jul 31, 2013 6:58:25 AM org.apache.catalina.loader.WebappClassLoader findResourceInternal
+INFO: Illegal access: this web application instance has been stopped already.  Could not load org/apache/axis/configuration/EngineConfigurationFactoryServlet.class.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+Jul 31, 2013 8:50:11 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 8:50:12 AM org.apache.catalina.loader.WebappClassLoader findResourceInternal
+INFO: Illegal access: this web application instance has been stopped already.  Could not load META-INF/services/org.apache.axis.EngineConfigurationFactory.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+Jul 31, 2013 8:50:12 AM org.apache.catalina.loader.WebappClassLoader findResourceInternal
+INFO: Illegal access: this web application instance has been stopped already.  Could not load org/apache/axis/configuration/EngineConfigurationFactoryServlet.class.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+Jul 31, 2013 8:52:32 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 8:52:34 AM org.apache.catalina.loader.WebappClassLoader findResourceInternal
+INFO: Illegal access: this web application instance has been stopped already.  Could not load META-INF/services/org.apache.axis.EngineConfigurationFactory.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+Jul 31, 2013 8:52:34 AM org.apache.catalina.loader.WebappClassLoader findResourceInternal
+INFO: Illegal access: this web application instance has been stopped already.  Could not load org/apache/axis/configuration/EngineConfigurationFactoryServlet.class.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+Jul 31, 2013 8:53:44 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 8:53:45 AM org.apache.catalina.loader.WebappClassLoader findResourceInternal
+INFO: Illegal access: this web application instance has been stopped already.  Could not load META-INF/services/org.apache.axis.EngineConfigurationFactory.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+Jul 31, 2013 8:53:45 AM org.apache.catalina.loader.WebappClassLoader findResourceInternal
+INFO: Illegal access: this web application instance has been stopped already.  Could not load org/apache/axis/configuration/EngineConfigurationFactoryServlet.class.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+Jul 31, 2013 9:12:32 AM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Jul 31, 2013 9:12:33 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Jul 31, 2013 9:12:43 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/wsrp-portlet] created a ThreadLocal with key of type [org.apache.axis.utils.XMLUtils.ThreadLocalDocumentBuilder] (value [org.apache.axis.utils.XMLUtils$ThreadLocalDocumentBuilder@d6c958e]) and a value of type [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl] (value [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl@53cea484]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Jul 31, 2013 9:12:55 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/opensocial-portlet] appears to have started a thread named [com.google.inject.internal.Finalizer] but has failed to stop it. This is very likely to create a memory leak.
+Jul 31, 2013 9:12:55 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/opensocial-portlet] created a ThreadLocal with key of type [null] (value [org.apache.shindig.common.xml.XmlUtil$2@59476728]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@5ec5a0e2]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Jul 31, 2013 9:12:55 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/opensocial-portlet] created a ThreadLocal with key of type [null] (value [com.google.inject.InjectorImpl$1@c5860a]) and a value of type [java.lang.Object[]] (value [[Ljava.lang.Object;@27e2faeb]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Jul 31, 2013 9:12:55 AM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Jul 31, 2013 9:25:23 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Jul 31, 2013 9:25:24 AM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 31, 2013 9:25:24 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1001 ms
+Jul 31, 2013 9:25:24 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 31, 2013 9:25:24 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.29
+Jul 31, 2013 9:25:24 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ROOT.xml
+Jul 31, 2013 9:26:00 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor tvd-slogan-contest-portlet.xml
+Jul 31, 2013 9:26:00 AM org.apache.catalina.startup.HostConfig deployDescriptor
+WARNING: A docBase /home/tvd/liferay/bundles/liferay-portal-6.0.6/tomcat-6.0.29/webapps/D:\liferay\bundles\liferay-portal-6.0.6\tomcat-6.0.29\webapps\tvd-slogan-contest-portlet inside the host appBase has been specified, and will be ignored
+Jul 31, 2013 9:26:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor send-receive-message-portlet.xml
+Jul 31, 2013 9:26:03 AM org.apache.catalina.startup.HostConfig deployDescriptor
+WARNING: A docBase /home/tvd/liferay/bundles/liferay-portal-6.0.6/tomcat-6.0.29/webapps/D:\liferay\bundles\liferay-portal-6.0.6\tomcat-6.0.29\webapps\send-receive-message-portlet inside the host appBase has been specified, and will be ignored
+Jul 31, 2013 9:26:04 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory opensocial-portlet
+Jul 31, 2013 9:26:10 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory default-site-templates-hook
+Jul 31, 2013 9:26:11 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory kaleo-web
+Jul 31, 2013 9:26:14 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory html5-initializr-theme
+Jul 31, 2013 9:26:16 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory management-high-school-portlet
+Jul 31, 2013 9:26:19 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory product-registration-portlet
+Jul 31, 2013 9:26:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory google-maps-portlet
+Jul 31, 2013 9:26:21 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory chat-portlet
+Jul 31, 2013 9:26:22 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory web-form-portlet
+Jul 31, 2013 9:26:23 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-theme
+Jul 31, 2013 9:26:24 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory social-networking-portlet
+Jul 31, 2013 9:26:25 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-mobile-theme
+Jul 31, 2013 9:26:25 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory inkwell-internet-theme
+Jul 31, 2013 9:26:28 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory mail-portlet
+Jul 31, 2013 9:26:29 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory wsrp-portlet
+Jul 31, 2013 9:26:32 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory slogan-contest-portlet
+Jul 31, 2013 9:26:33 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory tunnel-web
+Jul 31, 2013 9:26:36 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-hook
+Jul 31, 2013 9:26:37 AM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jul 31, 2013 9:26:37 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Jul 31, 2013 9:26:37 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/27  config=null
+Jul 31, 2013 9:26:37 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 72911 ms
+Jul 31, 2013 9:46:38 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 9:51:10 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 10:18:48 AM org.apache.catalina.core.StandardServer await
+WARNING: StandardServer.await: Invalid command 'GET / HTTP/1.1' received
+Jul 31, 2013 10:19:23 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 10:26:45 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 10:27:57 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 10:28:48 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 10:29:39 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 10:34:21 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 10:35:03 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 11:24:37 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 12:06:50 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 12:10:43 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 12:13:07 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 12:13:39 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 4:40:24 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 4:43:46 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 5:36:10 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 5:39:33 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 5:41:14 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 5:44:16 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 5:47:37 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 5:54:49 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 5:55:51 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 5:56:22 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 6:07:37 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]
+Jul 31, 2013 6:30:22 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib/jni:/lib:/usr/lib
+Jul 31, 2013 6:30:22 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 31, 2013 6:30:22 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 856 ms
+Jul 31, 2013 6:30:22 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 31, 2013 6:30:22 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.29
+Jul 31, 2013 6:30:22 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ROOT.xml
+Jul 31, 2013 6:30:58 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor tvd-slogan-contest-portlet.xml
+Jul 31, 2013 6:30:58 PM org.apache.catalina.startup.HostConfig deployDescriptor
+WARNING: A docBase /home/tvd/liferay/bundles/liferay-portal-6.0.6/tomcat-6.0.29/webapps/D:\liferay\bundles\liferay-portal-6.0.6\tomcat-6.0.29\webapps\tvd-slogan-contest-portlet inside the host appBase has been specified, and will be ignored
+Jul 31, 2013 6:31:03 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor send-receive-message-portlet.xml
+Jul 31, 2013 6:31:03 PM org.apache.catalina.startup.HostConfig deployDescriptor
+WARNING: A docBase /home/tvd/liferay/bundles/liferay-portal-6.0.6/tomcat-6.0.29/webapps/D:\liferay\bundles\liferay-portal-6.0.6\tomcat-6.0.29\webapps\send-receive-message-portlet inside the host appBase has been specified, and will be ignored
+Jul 31, 2013 6:31:04 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory opensocial-portlet
+Jul 31, 2013 6:31:11 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory default-site-templates-hook
+Jul 31, 2013 6:31:12 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory kaleo-web
+Jul 31, 2013 6:31:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory html5-initializr-theme
+Jul 31, 2013 6:31:18 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory management-high-school-portlet
+Jul 31, 2013 6:31:20 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory product-registration-portlet
+Jul 31, 2013 6:31:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory google-maps-portlet
+Jul 31, 2013 6:31:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory chat-portlet
+Jul 31, 2013 6:31:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory web-form-portlet
+Jul 31, 2013 6:31:24 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-theme
+Jul 31, 2013 6:31:24 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory social-networking-portlet
+Jul 31, 2013 6:31:26 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-mobile-theme
+Jul 31, 2013 6:31:26 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory inkwell-internet-theme
+Jul 31, 2013 6:31:29 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory mail-portlet
+Jul 31, 2013 6:31:30 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory wsrp-portlet
+Jul 31, 2013 6:31:34 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory slogan-contest-portlet
+Jul 31, 2013 6:31:35 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory tunnel-web
+Jul 31, 2013 6:31:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-hook
+Jul 31, 2013 6:31:38 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jul 31, 2013 6:31:38 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Jul 31, 2013 6:31:38 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/29  config=null
+Jul 31, 2013 6:31:38 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 75856 ms
+Jul 31, 2013 7:12:33 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context [/management-high-school-portlet]

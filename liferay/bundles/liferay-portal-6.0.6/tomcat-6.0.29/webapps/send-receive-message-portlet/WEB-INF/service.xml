@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_0_0.dtd">
+
+<service-builder package-path="com.ms.internet.message">
+	<author>I Am Dung</author>
+	<namespace>MS</namespace>
+	<entity name="MSMessage" local-service="true" remote-service="false">
+		<column name="messageId" type="long" primary="true"></column>
+		<column name="message" type="String"></column>
+		<column name="dateCreated" type="Date"></column>
+	</entity>
+	<entity name="MSMSender" local-service="true" remote-service="false">
+		<column name="userId" type="long" primary="true"></column>
+		<column name="messageId" type="long" primary="true"></column>
+		<column name="dateSend" type="Date"></column>
+		<finder return-type="MSMSender" name="MI">
+			<finder-column name="messageId"></finder-column>
+		</finder>
+		<finder return-type="Collection" name="U">
+			<finder-column name="userId"></finder-column>
+		</finder>
+		<finder return-type="Collection" name="U_D">
+			<finder-column name="userId"></finder-column>
+			<finder-column name="dateSend"></finder-column>
+		</finder>
+		<reference package-path="com.liferay.portlet.social" entity="SocialActivity"></reference>
+		<reference package-path="com.liferay.portal" entity="User"></reference>
+	</entity>
+	<entity name="MSMReceiver" local-service="true" remote-service="false">
+		<column name="userId" type="long" primary="true"></column>
+		<column name="messageId" type="long" primary="true"></column>
+		<column name="dateRecieved" type="Date"></column>
+		<column name="msStatus" type="boolean"></column>
+		<finder return-type="Collection" name="U">
+			<finder-column name="userId"></finder-column>
+		</finder>
+		<finder return-type="Collection" name="U_D">
+			<finder-column name="userId"></finder-column>
+			<finder-column name="dateRecieved"></finder-column>
+		</finder>
+		<reference package-path="com.liferay.portlet.social" entity="SocialActivity"></reference>
+		<reference package-path="com.liferay.portal" entity="User"></reference>
+	</entity>
+</service-builder>

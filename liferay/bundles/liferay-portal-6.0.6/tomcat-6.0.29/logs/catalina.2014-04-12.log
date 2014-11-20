@@ -1,0 +1,68 @@
+Apr 12, 2014 1:12:33 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Apr 12, 2014 1:12:34 AM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Apr 12, 2014 1:12:34 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1292 ms
+Apr 12, 2014 1:12:34 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Apr 12, 2014 1:12:34 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.29
+Apr 12, 2014 1:12:34 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor ROOT.xml
+Apr 12, 2014 1:13:14 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor send-receive-message-portlet.xml
+Apr 12, 2014 1:13:14 AM org.apache.catalina.startup.HostConfig deployDescriptor
+WARNING: A docBase /Volumes/Working/Workspace/Web/liferay/liferay/bundles/liferay-portal-6.0.6/tomcat-6.0.29/webapps/D:\liferay\bundles\liferay-portal-6.0.6\tomcat-6.0.29\webapps\send-receive-message-portlet inside the host appBase has been specified, and will be ignored
+Apr 12, 2014 1:13:17 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor tvd-slogan-contest-portlet.xml
+Apr 12, 2014 1:13:17 AM org.apache.catalina.startup.HostConfig deployDescriptor
+WARNING: A docBase /Volumes/Working/Workspace/Web/liferay/liferay/bundles/liferay-portal-6.0.6/tomcat-6.0.29/webapps/D:\liferay\bundles\liferay-portal-6.0.6\tomcat-6.0.29\webapps\tvd-slogan-contest-portlet inside the host appBase has been specified, and will be ignored
+Apr 12, 2014 1:13:19 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory chat-portlet
+Apr 12, 2014 1:13:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory default-site-templates-hook
+Apr 12, 2014 1:13:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory google-maps-portlet
+Apr 12, 2014 1:13:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory html5-initializr-theme
+Apr 12, 2014 1:13:21 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory inkwell-internet-theme
+Apr 12, 2014 1:13:24 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory kaleo-web
+Apr 12, 2014 1:13:27 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory mail-portlet
+Apr 12, 2014 1:13:28 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory management-high-school-portlet
+Apr 12, 2014 1:13:30 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory opensocial-portlet
+Apr 12, 2014 1:13:36 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory product-registration-portlet
+Apr 12, 2014 1:13:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-hook
+Apr 12, 2014 1:13:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-mobile-theme
+Apr 12, 2014 1:13:37 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory sevencogs-theme
+Apr 12, 2014 1:13:38 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory slogan-contest-portlet
+Apr 12, 2014 1:13:39 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory social-networking-portlet
+Apr 12, 2014 1:13:39 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory tunnel-web
+Apr 12, 2014 1:13:41 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory web-form-portlet
+Apr 12, 2014 1:13:42 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory wsrp-portlet
+Apr 12, 2014 1:13:44 AM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Apr 12, 2014 1:13:44 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Apr 12, 2014 1:13:44 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/20  config=null
+Apr 12, 2014 1:13:44 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 70167 ms
+Apr 12, 2014 2:40:09 AM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Apr 12, 2014 2:40:10 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina

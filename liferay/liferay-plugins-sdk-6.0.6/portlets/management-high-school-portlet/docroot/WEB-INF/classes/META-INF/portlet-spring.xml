@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="org.tvd.thptty.service.TYClassLocalService" class="org.tvd.thptty.service.impl.TYClassLocalServiceImpl" />
+	<bean id="org.tvd.thptty.service.TYClassLocalServiceUtil" class="org.tvd.thptty.service.TYClassLocalServiceUtil">
+		<property name="service" ref="org.tvd.thptty.service.TYClassLocalService" />
+	</bean>
+	<bean id="org.tvd.thptty.service.persistence.TYClassPersistence" class="org.tvd.thptty.service.persistence.TYClassPersistenceImpl" parent="basePersistence" />
+	<bean id="org.tvd.thptty.service.TYStudentLocalService" class="org.tvd.thptty.service.impl.TYStudentLocalServiceImpl" />
+	<bean id="org.tvd.thptty.service.TYStudentLocalServiceUtil" class="org.tvd.thptty.service.TYStudentLocalServiceUtil">
+		<property name="service" ref="org.tvd.thptty.service.TYStudentLocalService" />
+	</bean>
+	<bean id="org.tvd.thptty.service.persistence.TYStudentPersistence" class="org.tvd.thptty.service.persistence.TYStudentPersistenceImpl" parent="basePersistence" />
+	<bean id="org.tvd.thptty.service.TYClassStudentLocalService" class="org.tvd.thptty.service.impl.TYClassStudentLocalServiceImpl" />
+	<bean id="org.tvd.thptty.service.TYClassStudentLocalServiceUtil" class="org.tvd.thptty.service.TYClassStudentLocalServiceUtil">
+		<property name="service" ref="org.tvd.thptty.service.TYClassStudentLocalService" />
+	</bean>
+	<bean id="org.tvd.thptty.service.persistence.TYClassStudentPersistence" class="org.tvd.thptty.service.persistence.TYClassStudentPersistenceImpl" parent="basePersistence" />
+	<bean id="org.tvd.thptty.service.TYClassUserRoleLocalService" class="org.tvd.thptty.service.impl.TYClassUserRoleLocalServiceImpl" />
+	<bean id="org.tvd.thptty.service.TYClassUserRoleLocalServiceUtil" class="org.tvd.thptty.service.TYClassUserRoleLocalServiceUtil">
+		<property name="service" ref="org.tvd.thptty.service.TYClassUserRoleLocalService" />
+	</bean>
+	<bean id="org.tvd.thptty.service.persistence.TYClassUserRolePersistence" class="org.tvd.thptty.service.persistence.TYClassUserRolePersistenceImpl" parent="basePersistence" />
+	<bean id="org.tvd.thptty.service.TYSubjectLocalService" class="org.tvd.thptty.service.impl.TYSubjectLocalServiceImpl" />
+	<bean id="org.tvd.thptty.service.TYSubjectLocalServiceUtil" class="org.tvd.thptty.service.TYSubjectLocalServiceUtil">
+		<property name="service" ref="org.tvd.thptty.service.TYSubjectLocalService" />
+	</bean>
+	<bean id="org.tvd.thptty.service.persistence.TYSubjectPersistence" class="org.tvd.thptty.service.persistence.TYSubjectPersistenceImpl" parent="basePersistence" />
+	<bean id="org.tvd.thptty.service.TYSubjectUserRoleLocalService" class="org.tvd.thptty.service.impl.TYSubjectUserRoleLocalServiceImpl" />
+	<bean id="org.tvd.thptty.service.TYSubjectUserRoleLocalServiceUtil" class="org.tvd.thptty.service.TYSubjectUserRoleLocalServiceUtil">
+		<property name="service" ref="org.tvd.thptty.service.TYSubjectUserRoleLocalService" />
+	</bean>
+	<bean id="org.tvd.thptty.service.persistence.TYSubjectUserRolePersistence" class="org.tvd.thptty.service.persistence.TYSubjectUserRolePersistenceImpl" parent="basePersistence" />
+	<bean id="org.tvd.thptty.service.TYTeacherLocalService" class="org.tvd.thptty.service.impl.TYTeacherLocalServiceImpl" />
+	<bean id="org.tvd.thptty.service.TYTeacherLocalServiceUtil" class="org.tvd.thptty.service.TYTeacherLocalServiceUtil">
+		<property name="service" ref="org.tvd.thptty.service.TYTeacherLocalService" />
+	</bean>
+	<bean id="org.tvd.thptty.service.persistence.TYTeacherPersistence" class="org.tvd.thptty.service.persistence.TYTeacherPersistenceImpl" parent="basePersistence" />
+	<bean id="org.tvd.thptty.service.TYStudentPointReserveLocalService" class="org.tvd.thptty.service.impl.TYStudentPointReserveLocalServiceImpl" />
+	<bean id="org.tvd.thptty.service.TYStudentPointReserveLocalServiceUtil" class="org.tvd.thptty.service.TYStudentPointReserveLocalServiceUtil">
+		<property name="service" ref="org.tvd.thptty.service.TYStudentPointReserveLocalService" />
+	</bean>
+	<bean id="org.tvd.thptty.service.persistence.TYStudentPointReservePersistence" class="org.tvd.thptty.service.persistence.TYStudentPointReservePersistenceImpl" parent="basePersistence" />
+	<bean id="org.tvd.thptty.service.TYStudentPointLocalService" class="org.tvd.thptty.service.impl.TYStudentPointLocalServiceImpl" />
+	<bean id="org.tvd.thptty.service.TYStudentPointLocalServiceUtil" class="org.tvd.thptty.service.TYStudentPointLocalServiceUtil">
+		<property name="service" ref="org.tvd.thptty.service.TYStudentPointLocalService" />
+	</bean>
+	<bean id="org.tvd.thptty.service.persistence.TYStudentPointPersistence" class="org.tvd.thptty.service.persistence.TYStudentPointPersistenceImpl" parent="basePersistence" />
+	<bean id="org.tvd.thptty.service.persistence.TYStudentPointFinder" class="org.tvd.thptty.service.persistence.TYStudentPointFinderImpl" parent="basePersistence" />
+	<bean id="org.tvd.thptty.service.TYStudentConductLocalService" class="org.tvd.thptty.service.impl.TYStudentConductLocalServiceImpl" />
+	<bean id="org.tvd.thptty.service.TYStudentConductLocalServiceUtil" class="org.tvd.thptty.service.TYStudentConductLocalServiceUtil">
+		<property name="service" ref="org.tvd.thptty.service.TYStudentConductLocalService" />
+	</bean>
+	<bean id="org.tvd.thptty.service.persistence.TYStudentConductPersistence" class="org.tvd.thptty.service.persistence.TYStudentConductPersistenceImpl" parent="basePersistence" />
+	<bean id="org.tvd.thptty.service.TYSubjectClassUserRoleLocalService" class="org.tvd.thptty.service.impl.TYSubjectClassUserRoleLocalServiceImpl" />
+	<bean id="org.tvd.thptty.service.TYSubjectClassUserRoleLocalServiceUtil" class="org.tvd.thptty.service.TYSubjectClassUserRoleLocalServiceUtil">
+		<property name="service" ref="org.tvd.thptty.service.TYSubjectClassUserRoleLocalService" />
+	</bean>
+	<bean id="org.tvd.thptty.service.persistence.TYSubjectClassUserRolePersistence" class="org.tvd.thptty.service.persistence.TYSubjectClassUserRolePersistenceImpl" parent="basePersistence" />
+	<bean id="org.tvd.thptty.service.TYPrioritySubjectLocalService" class="org.tvd.thptty.service.impl.TYPrioritySubjectLocalServiceImpl" />
+	<bean id="org.tvd.thptty.service.TYPrioritySubjectLocalServiceUtil" class="org.tvd.thptty.service.TYPrioritySubjectLocalServiceUtil">
+		<property name="service" ref="org.tvd.thptty.service.TYPrioritySubjectLocalService" />
+	</bean>
+	<bean id="org.tvd.thptty.service.persistence.TYPrioritySubjectPersistence" class="org.tvd.thptty.service.persistence.TYPrioritySubjectPersistenceImpl" parent="basePersistence" />
+	<bean id="org.tvd.thptty.service.SemesterLocalService" class="org.tvd.thptty.service.impl.SemesterLocalServiceImpl" />
+	<bean id="org.tvd.thptty.service.SemesterLocalServiceUtil" class="org.tvd.thptty.service.SemesterLocalServiceUtil">
+		<property name="service" ref="org.tvd.thptty.service.SemesterLocalService" />
+	</bean>
+	<bean id="org.tvd.thptty.service.persistence.SemesterPersistence" class="org.tvd.thptty.service.persistence.SemesterPersistenceImpl" parent="basePersistence" />
+	<bean id="org.tvd.thptty.service.TYMessagesLocalService" class="org.tvd.thptty.service.impl.TYMessagesLocalServiceImpl" />
+	<bean id="org.tvd.thptty.service.TYMessagesLocalServiceUtil" class="org.tvd.thptty.service.TYMessagesLocalServiceUtil">
+		<property name="service" ref="org.tvd.thptty.service.TYMessagesLocalService" />
+	</bean>
+	<bean id="org.tvd.thptty.service.persistence.TYMessagesPersistence" class="org.tvd.thptty.service.persistence.TYMessagesPersistenceImpl" parent="basePersistence" />
+</beans>

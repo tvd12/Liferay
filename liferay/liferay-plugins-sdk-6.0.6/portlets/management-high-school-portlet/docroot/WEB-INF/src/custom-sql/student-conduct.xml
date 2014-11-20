@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<custom-sql>
+	<sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.findStudentsConductByS_C">
+		<![CDATA[
+			
+			SELECT
+					TY_TYStudentConduct.studentId AS studentId
+					TY_TYStudentConduct.conduct AS conduct
+			FROM
+					TY_TYStudentConduct, TY_TYStudent
+			WHERE
+					TY_TYStudentConduct.courses = ?
+					AND
+					TY_TYStudentConduct.semester = ?
+					AND
+					TY_TYStudent.studentId = TYStudentConduct.studentId
+					AND
+					TY_TYStudent.companyId = ?
+					AND
+					TY_TYStudent.groupId = ?
+					AND
+					TY_TYStudentConduct.conduct = ?
+					
+		]]>
+	</sql>
+	
+	<sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.countStudentsConductByS_C">
+		<![CDATA[
+			
+			SELECT 
+					COUNT(*) AS count
+			FROM
+					TY_TYStudentConduct, TY_TYStudent
+			WHERE
+					TY_TYStudentConduct.courses = ?
+					AND
+					TY_TYStudentConduct.semester = ?
+					AND
+					TY_TYStudent.studentId = TYStudentConduct.studentId
+					AND
+					TY_TYStudent.companyId = ?
+					AND
+					TY_TYStudent.groupId = ?
+					AND
+					TY_TYStudentConduct.conduct = ?
+
+		]]>
+	</sql>
+	
+	<sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.findStudentsConductByS_C_C">
+		<![CDATA[
+			
+			SELECT
+					TY_TYStudentConduct.studentId AS studentId
+					TY_TYStudentConduct.conduct AS conduct
+			FROM
+					TY_TYStudentConduct, TY_TYStudent, TY_TYClassStudent
+			WHERE
+					TY_TYStudentConduct.courses = ?
+					AND
+					TY_TYStudentConduct.semester = ?
+					AND
+					TY_TYStudent.studentId = TY_TYStudentConduct.studentId
+					AND
+					TY_TYStudent.companyId = ?
+					AND
+					TY_TYStudent.groupId = ?
+					AND
+					TY_TYStudentConduct.conduct = ?
+					AND
+					TY_TYClassStudent.studentId = TY_YStudent.studentId
+					AND
+					TY_TYClassStudent.courses = TY_TYStudentConduct.courses
+					AND
+					TY_TYClassStudent.classId = ?
+					
+		]]>
+	</sql>
+	
+	<sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.countStudentsConductByS_C_C">
+		<![CDATA[
+			
+			SELECT 
+					COUNT(*) AS count
+			FROM
+					TY_TYStudentConduct, TY_TYStudent, TY_TYClassStudent
+			WHERE
+					TY_TYStudentConduct.courses = ?
+					AND
+					TY_TYStudentConduct.semester = ?
+					AND
+					TY_TYStudent.studentId = TY_TYStudentConduct.studentId
+					AND
+					TY_TYStudent.companyId = ?
+					AND
+					TY_TYStudent.groupId = ?
+					AND
+					TY_TYStudentConduct.conduct = ?
+					AND
+					TY_TYClassStudent.studentId = TY_TYStudent.studentId
+					AND
+					TY_TYClassStudent.courses = TY_TYStudentConduct.courses
+					AND
+					TY_TYClassStudent.classId = ?
+
+		]]>
+	</sql>
+	
+</custom-sql>

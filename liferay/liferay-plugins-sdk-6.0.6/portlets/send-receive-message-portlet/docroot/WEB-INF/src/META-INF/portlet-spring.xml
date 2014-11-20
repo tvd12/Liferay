@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.ms.internet.message.service.MSMessageLocalService" class="com.ms.internet.message.service.impl.MSMessageLocalServiceImpl" />
+	<bean id="com.ms.internet.message.service.MSMessageLocalServiceUtil" class="com.ms.internet.message.service.MSMessageLocalServiceUtil">
+		<property name="service" ref="com.ms.internet.message.service.MSMessageLocalService" />
+	</bean>
+	<bean id="com.ms.internet.message.service.persistence.MSMessagePersistence" class="com.ms.internet.message.service.persistence.MSMessagePersistenceImpl" parent="basePersistence" />
+	<bean id="com.ms.internet.message.service.MSMSenderLocalService" class="com.ms.internet.message.service.impl.MSMSenderLocalServiceImpl" />
+	<bean id="com.ms.internet.message.service.MSMSenderLocalServiceUtil" class="com.ms.internet.message.service.MSMSenderLocalServiceUtil">
+		<property name="service" ref="com.ms.internet.message.service.MSMSenderLocalService" />
+	</bean>
+	<bean id="com.ms.internet.message.service.persistence.MSMSenderPersistence" class="com.ms.internet.message.service.persistence.MSMSenderPersistenceImpl" parent="basePersistence" />
+	<bean id="com.ms.internet.message.service.MSMReceiverLocalService" class="com.ms.internet.message.service.impl.MSMReceiverLocalServiceImpl" />
+	<bean id="com.ms.internet.message.service.MSMReceiverLocalServiceUtil" class="com.ms.internet.message.service.MSMReceiverLocalServiceUtil">
+		<property name="service" ref="com.ms.internet.message.service.MSMReceiverLocalService" />
+	</bean>
+	<bean id="com.ms.internet.message.service.persistence.MSMReceiverPersistence" class="com.ms.internet.message.service.persistence.MSMReceiverPersistenceImpl" parent="basePersistence" />
+</beans>

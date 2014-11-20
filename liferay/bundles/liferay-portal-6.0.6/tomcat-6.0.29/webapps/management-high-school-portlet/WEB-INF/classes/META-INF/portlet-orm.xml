@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="org.tvd.thptty.model.impl.TYClassModelImpl">
+		<attributes>
+			<id name="classId" />
+			<basic name="companyId" />
+			<basic name="groupId" />
+			<basic name="classCode" />
+			<basic name="classGroup" />
+			<basic name="className" />
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="userId" />
+			<transient name="primaryKey" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="org.tvd.thptty.model.impl.TYStudentModelImpl">
+		<attributes>
+			<id name="studentId" />
+			<basic name="companyId" />
+			<basic name="groupId" />
+			<basic name="userId" />
+			<basic name="studentLastName" />
+			<basic name="studentFirstName" />
+			<basic name="studentGroup1" />
+			<basic name="studentGroup2" />
+			<basic name="studentGroup3" />
+			<basic name="male" />
+			<basic name="birthDay">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="emailAddress" />
+			<basic name="emailPassword" />
+			<basic name="address" />
+			<basic name="fatherName" />
+			<basic name="fatherPhone" />
+			<basic name="motherName" />
+			<basic name="motherPhone" />
+			<basic name="studentCode" />
+			<basic name="loginCount" />
+			<basic name="dateLogin">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="passwordEncrypt" />
+			<basic name="question" />
+			<basic name="answer" />
+			<basic name="regId" />
+			<transient name="primaryKey" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="org.tvd.thptty.model.impl.TYClassStudentModelImpl">
+		<id-class class="org.tvd.thptty.service.persistence.TYClassStudentPK" />
+		<attributes>
+			<id name="courses" />
+			<id name="studentId" />
+			<basic name="classId" />
+			<transient name="primaryKey" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="org.tvd.thptty.model.impl.TYClassUserRoleModelImpl">
+		<id-class class="org.tvd.thptty.service.persistence.TYClassUserRolePK" />
+		<attributes>
+			<id name="courses" />
+			<id name="classId" />
+			<id name="userId" />
+			<id name="roleId" />
+			<basic name="status" />
+			<transient name="primaryKey" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="org.tvd.thptty.model.impl.TYSubjectModelImpl">
+		<attributes>
+			<id name="subjectId" />
+			<basic name="companyId" />
+			<basic name="groupId" />
+			<basic name="subjectCode" />
+			<basic name="subjectName" />
+			<basic name="description" />
+			<transient name="primaryKey" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="org.tvd.thptty.model.impl.TYSubjectUserRoleModelImpl">
+		<id-class class="org.tvd.thptty.service.persistence.TYSubjectUserRolePK" />
+		<attributes>
+			<id name="courses" />
+			<id name="subjectId" />
+			<id name="userId" />
+			<id name="roleId" />
+			<transient name="primaryKey" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="org.tvd.thptty.model.impl.TYTeacherModelImpl">
+		<attributes>
+			<id name="teacherId" />
+			<basic name="teacherDegree" />
+			<basic name="teacherCertificate" />
+			<basic name="userId" />
+			<transient name="primaryKey" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="org.tvd.thptty.model.impl.TYStudentPointReserveModelImpl">
+		<id-class class="org.tvd.thptty.service.persistence.TYStudentPointReservePK" />
+		<attributes>
+			<id name="courses" />
+			<id name="semester" />
+			<id name="studentId" />
+			<id name="subjectId" />
+			<id name="pointType" />
+			<id name="pointIndex" />
+			<id name="pointFactor" />
+			<basic name="point" />
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="userId" />
+			<transient name="primaryKey" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="org.tvd.thptty.model.impl.TYStudentPointModelImpl">
+		<id-class class="org.tvd.thptty.service.persistence.TYStudentPointPK" />
+		<attributes>
+			<id name="courses" />
+			<id name="semester" />
+			<id name="studentId" />
+			<id name="subjectId" />
+			<id name="pointType" />
+			<id name="pointIndex" />
+			<id name="pointFactor" />
+			<basic name="point" />
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="userId" />
+			<transient name="primaryKey" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="org.tvd.thptty.model.impl.TYStudentConductModelImpl">
+		<id-class class="org.tvd.thptty.service.persistence.TYStudentConductPK" />
+		<attributes>
+			<id name="courses" />
+			<id name="semester" />
+			<id name="studentId" />
+			<basic name="conduct" />
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="userId" />
+			<transient name="primaryKey" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="org.tvd.thptty.model.impl.TYSubjectClassUserRoleModelImpl">
+		<id-class class="org.tvd.thptty.service.persistence.TYSubjectClassUserRolePK" />
+		<attributes>
+			<id name="courses" />
+			<id name="subjectId" />
+			<id name="classId" />
+			<id name="userId" />
+			<id name="roleId" />
+			<basic name="status" />
+			<transient name="primaryKey" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="org.tvd.thptty.model.impl.TYPrioritySubjectModelImpl">
+		<id-class class="org.tvd.thptty.service.persistence.TYPrioritySubjectPK" />
+		<attributes>
+			<id name="courses" />
+			<id name="subjectId" />
+			<id name="studentId" />
+			<basic name="isSpecial" />
+			<basic name="extra" />
+			<transient name="primaryKey" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="org.tvd.thptty.model.impl.SemesterModelImpl">
+		<id-class class="org.tvd.thptty.service.persistence.SemesterPK" />
+		<attributes>
+			<id name="companyId" />
+			<id name="groupId" />
+			<id name="semesterId" />
+			<basic name="status" />
+			<transient name="primaryKey" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="org.tvd.thptty.model.impl.TYMessagesModelImpl">
+		<attributes>
+			<id name="messageId" />
+			<basic name="companyId" />
+			<basic name="groupId" />
+			<basic name="actionId" />
+			<basic name="userId" />
+			<basic name="classId" />
+			<basic name="subjectId" />
+			<basic name="happenDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<transient name="primaryKey" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="org.tvd.thptty.model.impl.TYClassImpl" name="TYClass">
+		<table name="TY_TYClass" />
+		<attributes>
+			<transient name="classFullName" />
+			<transient name="index" />
+		</attributes>
+	</entity>
+	<entity class="org.tvd.thptty.model.impl.TYStudentImpl" name="TYStudent">
+		<table name="TY_TYStudent" />
+		<attributes>
+			<transient name="fullName" />
+			<transient name="gender" />
+			<transient name="index" />
+		</attributes>
+	</entity>
+	<entity class="org.tvd.thptty.model.impl.TYClassStudentImpl" name="TYClassStudent">
+		<table name="TY_TYClassStudent" />
+		<attributes />
+	</entity>
+	<entity class="org.tvd.thptty.model.impl.TYClassUserRoleImpl" name="TYClassUserRole">
+		<table name="TY_TYClassUserRole" />
+		<attributes />
+	</entity>
+	<entity class="org.tvd.thptty.model.impl.TYSubjectImpl" name="TYSubject">
+		<table name="TY_TYSubject" />
+		<attributes>
+			<transient name="index" />
+		</attributes>
+	</entity>
+	<entity class="org.tvd.thptty.model.impl.TYSubjectUserRoleImpl" name="TYSubjectUserRole">
+		<table name="TY_TYSubjectUserRole" />
+		<attributes />
+	</entity>
+	<entity class="org.tvd.thptty.model.impl.TYTeacherImpl" name="TYTeacher">
+		<table name="TY_TYTeacher" />
+		<attributes />
+	</entity>
+	<entity class="org.tvd.thptty.model.impl.TYStudentPointReserveImpl" name="TYStudentPointReserve">
+		<table name="TY_TYStudentPointReserve" />
+		<attributes />
+	</entity>
+	<entity class="org.tvd.thptty.model.impl.TYStudentPointImpl" name="TYStudentPoint">
+		<table name="TY_TYStudentPoint" />
+		<attributes />
+	</entity>
+	<entity class="org.tvd.thptty.model.impl.TYStudentConductImpl" name="TYStudentConduct">
+		<table name="TY_TYStudentConduct" />
+		<attributes />
+	</entity>
+	<entity class="org.tvd.thptty.model.impl.TYSubjectClassUserRoleImpl" name="TYSubjectClassUserRole">
+		<table name="TY_TYSubjectClassUserRole" />
+		<attributes />
+	</entity>
+	<entity class="org.tvd.thptty.model.impl.TYPrioritySubjectImpl" name="TYPrioritySubject">
+		<table name="TY_TYPrioritySubject" />
+		<attributes />
+	</entity>
+	<entity class="org.tvd.thptty.model.impl.SemesterImpl" name="Semester">
+		<table name="TY_Semester" />
+		<attributes />
+	</entity>
+	<entity class="org.tvd.thptty.model.impl.TYMessagesImpl" name="TYMessages">
+		<table name="TY_TYMessages" />
+		<attributes />
+	</entity>
+</entity-mappings>

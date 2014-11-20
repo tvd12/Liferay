@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model-hints>
+	<model name="org.tvd.thptty.model.TYClass">
+		<field name="classId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="classCode" type="String" />
+		<field name="classGroup" type="int" />
+		<field name="className" type="String" />
+		<field name="modifiedDate" type="Date" />
+		<field name="userId" type="long" />
+	</model>
+	<model name="org.tvd.thptty.model.TYStudent">
+		<field name="studentId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="userId" type="long" />
+		<field name="studentLastName" type="String" />
+		<field name="studentFirstName" type="String" />
+		<field name="studentGroup1" type="int" />
+		<field name="studentGroup2" type="int" />
+		<field name="studentGroup3" type="int" />
+		<field name="male" type="boolean" />
+		<field name="birthDay" type="Date" />
+		<field name="emailAddress" type="String" />
+		<field name="emailPassword" type="String" />
+		<field name="address" type="String" />
+		<field name="fatherName" type="String" />
+		<field name="fatherPhone" type="String" />
+		<field name="motherName" type="String" />
+		<field name="motherPhone" type="String" />
+		<field name="studentCode" type="String" />
+		<field name="loginCount" type="int" />
+		<field name="dateLogin" type="Date" />
+		<field name="passwordEncrypt" type="boolean" />
+		<field name="question" type="String" />
+		<field name="answer" type="String" />
+		<field name="regId" type="String" />
+	</model>
+	<model name="org.tvd.thptty.model.TYClassStudent">
+		<field name="courses" type="int" />
+		<field name="studentId" type="long" />
+		<field name="classId" type="long" />
+	</model>
+	<model name="org.tvd.thptty.model.TYClassUserRole">
+		<field name="courses" type="int" />
+		<field name="classId" type="long" />
+		<field name="userId" type="long" />
+		<field name="roleId" type="long" />
+		<field name="status" type="int" />
+	</model>
+	<model name="org.tvd.thptty.model.TYSubject">
+		<field name="subjectId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="subjectCode" type="String" />
+		<field name="subjectName" type="String" />
+		<field name="description" type="String" />
+	</model>
+	<model name="org.tvd.thptty.model.TYSubjectUserRole">
+		<field name="courses" type="int" />
+		<field name="subjectId" type="long" />
+		<field name="userId" type="long" />
+		<field name="roleId" type="long" />
+	</model>
+	<model name="org.tvd.thptty.model.TYTeacher">
+		<field name="teacherId" type="long" />
+		<field name="teacherDegree" type="String" />
+		<field name="teacherCertificate" type="String" />
+		<field name="userId" type="long" />
+	</model>
+	<model name="org.tvd.thptty.model.TYStudentPointReserve">
+		<field name="courses" type="int" />
+		<field name="semester" type="int" />
+		<field name="studentId" type="long" />
+		<field name="subjectId" type="long" />
+		<field name="pointType" type="int" />
+		<field name="pointIndex" type="int" />
+		<field name="pointFactor" type="int" />
+		<field name="point" type="double" />
+		<field name="modifiedDate" type="Date" />
+		<field name="userId" type="long" />
+	</model>
+	<model name="org.tvd.thptty.model.TYStudentPoint">
+		<field name="courses" type="int" />
+		<field name="semester" type="int" />
+		<field name="studentId" type="long" />
+		<field name="subjectId" type="long" />
+		<field name="pointType" type="int" />
+		<field name="pointIndex" type="int" />
+		<field name="pointFactor" type="int" />
+		<field name="point" type="double" />
+		<field name="modifiedDate" type="Date" />
+		<field name="userId" type="long" />
+	</model>
+	<model name="org.tvd.thptty.model.TYStudentConduct">
+		<field name="courses" type="int" />
+		<field name="semester" type="int" />
+		<field name="studentId" type="long" />
+		<field name="conduct" type="int" />
+		<field name="modifiedDate" type="Date" />
+		<field name="userId" type="long" />
+	</model>
+	<model name="org.tvd.thptty.model.TYSubjectClassUserRole">
+		<field name="courses" type="int" />
+		<field name="subjectId" type="long" />
+		<field name="classId" type="long" />
+		<field name="userId" type="long" />
+		<field name="roleId" type="long" />
+		<field name="status" type="int" />
+	</model>
+	<model name="org.tvd.thptty.model.TYPrioritySubject">
+		<field name="courses" type="int" />
+		<field name="subjectId" type="long" />
+		<field name="studentId" type="long" />
+		<field name="isSpecial" type="boolean" />
+		<field name="extra" type="int" />
+	</model>
+	<model name="org.tvd.thptty.model.Semester">
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="semesterId" type="int" />
+		<field name="status" type="int" />
+	</model>
+	<model name="org.tvd.thptty.model.TYMessages">
+		<field name="messageId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="actionId" type="long" />
+		<field name="userId" type="long" />
+		<field name="classId" type="long" />
+		<field name="subjectId" type="long" />
+		<field name="happenDate" type="Date" />
+	</model>
+</model-hints>

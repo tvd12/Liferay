@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE display PUBLIC "-//Liferay//DTD Display 6.0.0//EN" "http://www.liferay.com/dtd/liferay-display_6_0_0.dtd">
+
+<display>
+	<category name="Inkwell Internet">
+		<portlet id="product-registration"></portlet>
+	</category>
+	<category name="category.hidden">
+		<portlet id="product-admin"></portlet>
+	</category>
+</display>

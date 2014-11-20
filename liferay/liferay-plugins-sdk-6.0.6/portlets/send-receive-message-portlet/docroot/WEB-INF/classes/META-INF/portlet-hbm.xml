@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.ms.internet.message.model.MSMessage" />
+	<import class="com.ms.internet.message.model.MSMSender" />
+	<import class="com.ms.internet.message.model.MSMReceiver" />
+	<class name="com.ms.internet.message.model.impl.MSMessageImpl" table="MS_MSMessage">
+		<cache usage="read-write" />
+		<id name="messageId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="message" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="dateCreated" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.ms.internet.message.model.impl.MSMSenderImpl" table="MS_MSMSender">
+		<cache usage="read-write" />
+		<composite-id name="primaryKey" class="com.ms.internet.message.service.persistence.MSMSenderPK">
+			<key-property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property name="messageId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+		<property name="dateSend" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.ms.internet.message.model.impl.MSMReceiverImpl" table="MS_MSMReceiver">
+		<cache usage="read-write" />
+		<composite-id name="primaryKey" class="com.ms.internet.message.service.persistence.MSMReceiverPK">
+			<key-property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+			<key-property name="messageId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+		<property name="dateRecieved" type="org.hibernate.type.TimestampType" />
+		<property name="msStatus" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+	</class>
+</hibernate-mapping>

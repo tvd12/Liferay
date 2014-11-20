@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model-hints>
+	<model name="com.ms.internet.message.model.MSMessage">
+		<field name="messageId" type="long" />
+		<field name="message" type="String" />
+		<field name="dateCreated" type="Date" />
+	</model>
+	<model name="com.ms.internet.message.model.MSMSender">
+		<field name="userId" type="long" />
+		<field name="messageId" type="long" />
+		<field name="dateSend" type="Date" />
+	</model>
+	<model name="com.ms.internet.message.model.MSMReceiver">
+		<field name="userId" type="long" />
+		<field name="messageId" type="long" />
+		<field name="dateRecieved" type="Date" />
+		<field name="msStatus" type="boolean" />
+	</model>
+</model-hints>

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_0_0.dtd">
+
+<service-builder package-path="org.tvd.thptty">
+	<author>Ta Van Dung</author>
+	<namespace>TY</namespace>
+	<entity name="TYClass" local-service="true" remote-service="false">
+		<!-- PK fields -->
+		<column name="classId" type="long" primary="true"></column>
+		<!-- Audit fields -->
+		<column name="companyId" type="long"></column>
+		<column name="groupId" type="long"></column>
+		<!-- Other fields -->
+		<column name="classCode" type="String"></column>
+		<column name="classGroup" type="int"></column>
+		<column name="className" type="String"></column>
+		<column name="modifiedDate" type="Date"></column>
+		<column name="userId" type="long"></column>
+		<!-- Order -->
+		<order by="asc">
+			<order-column name="classId"></order-column>
+		</order>
+		<!-- Finder methods -->
+		<finder name="G_ID" return-type="Collection">
+			<finder-column name="companyId"></finder-column>
+			<finder-column name="groupId"></finder-column>
+		</finder>
+		<finder name="C_G" return-type="TYClass">
+			<finder-column name="classId"></finder-column>
+			<finder-column name="groupId"></finder-column>
+			<finder-column name="companyId"></finder-column>
+		</finder>
+		<finder return-type="TYClass" name="classGroup_Name">
+			<finder-column name="companyId"></finder-column>
+			<finder-column name="groupId"></finder-column>
+			<finder-column name="classGroup"></finder-column>
+			<finder-column name="className"></finder-column>
+		</finder>
+	</entity>
+	<entity name="TYStudent" local-service="true" remote-service="false">
+		<column name="studentId" type="long" primary="true"></column>
+		<column name="companyId" type="long"></column>
+		<column name="groupId" type="long"></column>
+		<column name="userId" type="long"></column>
+		<column name="studentLastName" type="String"></column>
+		<column name="studentFirstName" type="String"></column>
+		<!-- A, B, C, or D -->
+		<column name="studentGroup1" type="int"></column>
+		<!-- A or B -->
+		<column name="studentGroup2" type="int"></column>
+		<!-- TN, XH or CB -->
+		<column name="studentGroup3" type="int"></column>
+		<column name="male" type="boolean"></column>
+		<column name="birthDay" type="Date"></column>
+		<column name="emailAddress" type="String"></column>
+		<column name="emailPassword" type="String"></column>
+		<column name="address" type="String"></column>
+		<column name="fatherName" type="String"></column>
+		<column name="fatherPhone" type="String"></column>
+		<column name="motherName" type="String"></column>
+		<column name="motherPhone" type="String"></column>
+		<column name="studentCode" type="String"></column>
+		<column name="loginCount" type="int"></column>
+		<column name="dateLogin" type="Date"></column>
+		<column name="passwordEncrypt" type="boolean"></column>
+		<column name="question" type="String"></column>
+		<column name="answer" type="String"></column>
+		<column name="regId" type="String"></column>
+		<order by="asc">
+			<order-column name="studentLastName"></order-column>
+		</order>
+		<finder return-type="TYStudent" name="Email">
+			<finder-column name="companyId"></finder-column>
+			<finder-column name="groupId"></finder-column>
+			<finder-column name="emailAddress"></finder-column>
+		</finder>
+		<finder return-type="Collection" name="School">
+			<finder-column name="companyId"></finder-column>
+			<finder-column name="groupId"></finder-column>
+		</finder>
+		<finder return-type="Collection" name="G_FirstName">
+			<finder-column name="companyId"></finder-column>
+			<finder-column name="groupId"></finder-column>
+			<finder-column name="studentFirstName"></finder-column>
+		</finder>
+		<finder return-type="Collection" name="G_LastName">
+			<finder-column name="companyId"></finder-column>
+			<finder-column name="groupId"></finder-column>
+			<finder-column name="studentLastName"></finder-column>
+		</finder>
+		<finder return-type="Collection" name="G_F_L_Name">
+			<finder-column name="companyId"></finder-column>
+			<finder-column name="groupId"></finder-column>
+			<finder-column name="studentFirstName"></finder-column>
+			<finder-column name="studentLastName"></finder-column>
+		</finder>
+		<finder return-type="Collection" name="Group1">
+			<finder-column name="companyId"></finder-column>
+			<finder-column name="groupId"></finder-column>
+			<finder-column name="studentGroup1"></finder-column>
+		</finder>
+		<finder return-type="Collection" name="Group2">
+			<finder-column name="companyId"></finder-column>
+			<finder-column name="groupId"></finder-column>
+			<finder-column name="studentGroup2"></finder-column>
+		</finder>
+		<finder return-type="Collection" name="Group3">
+			<finder-column name="companyId"></finder-column>
+			<finder-column name="groupId"></finder-column>
+			<finder-column name="studentGroup3"></finder-column>
+		</finder>
+		<reference package-path="com.liferay.portal" entity="User"></reference>
+	</entity>
+	<entity name="TYClassStudent" local-service="true" remote-service="false">
+		<column name="courses" type="int" primary="true"></column>
+		<column name="studentId" type="long" primary="true"></column>
+		<column name="classId" type="long"></column>
+		<finder return-type="Collection" name="C_C">
+			<finder-column name="courses"></finder-column>
+			<finder-column name="classId"></finder-column>
+		</finder>
+		<finder return-type="TYClassStudent" name="C_S">
+			<finder-column name="courses"></finder-column>
+			<finder-column name="studentId"></finder-column>
+		</finder>
+	</entity>
+	<entity name="TYClassUserRole" local-service="true" remote-service="false">
+		<column name="courses" type="int" primary="true"></column>
+		<column name="classId" type="long" primary="true"></column>
+		<column name="userId" type="long" primary="true"></column>
+		<column name="roleId" type="long" primary="true"></column>
+		<column name="status" type="int"></column>
+		<finder return-type="TYClassUserRole" name="C_C_R">
+			<finder-column name="courses"></finder-column>
+			<finder-column name="classId"></finder-column>
+			<finder-column name="roleId"></finder-column>
+		</finder>
+		<finder return-type="Collection" name="C_C">
+			<finder-column name="courses"></finder-column>
+			<finder-column name="classId"></finder-column>
+		</finder>
+		<finder return-type="Collection" name="C_U_R">
+			<finder-column name="courses"></finder-column>
+			<finder-column name="userId"></finder-column>
+			<finder-column name="roleId"></finder-column>
+		</finder>
+		<reference package-path="com.liferay.portal" entity="User"></reference>
+		<reference package-path="com.liferay.portal" entity="Role"></reference>
+		<reference package-path="com.liferay.portal" entity="Group"></reference>
+	</entity>
+	<entity name="TYSubject" local-service="true" remote-service="false">
+		<column name="subjectId" type="long" primary="true"></column>
+		<column name="companyId" type="long"></column>
+		<column name="groupId" type="long"></column>
+		<column name="subjectCode" type="String"></column>
+		<column name="subjectName" type="String"></column>
+		<column name="description" type="String"></column>
+		<finder return-type="Collection" name="C_G">
+			<finder-column name="companyId"></finder-column>
+			<finder-column name="groupId"></finder-column>
+		</finder>
+		<finder return-type="TYSubject" name="Code">
+			<finder-column name="companyId"></finder-column>
+			<finder-column name="groupId"></finder-column>
+			<finder-column name="subjectCode"></finder-column>
+		</finder>
+		<finder return-type="TYSubject" name="Name">
+			<finder-column name="companyId"></finder-column>
+			<finder-column name="groupId"></finder-column>
+			<finder-column name="subjectName"></finder-column>
+		</finder>
+	</entity>
+	<entity name="TYSubjectUserRole" local-service="true" remote-service="false">
+		<column name="courses" type="int" primary="true"></column>
+		<column name="subjectId" type="long" primary="true"></column>
+		<column name="userId" type="long" primary="true"></column>
+		<column name="roleId" type="long" primary="true"></column>
+		<finder return-type="TYSubjectUserRole" name="C_S_R">
+			<finder-column name="courses"></finder-column>
+			<finder-column name="subjectId"></finder-column>
+			<finder-column name="roleId"></finder-column>
+		</finder>
+		<finder return-type="Collection" name="C_S">
+			<finder-column name="courses"></finder-column>
+			<finder-column name="subjectId"></finder-column>
+		</finder>
+		<finder return-type="Collection" name="C_U_R">
+			<finder-column name="courses"></finder-column>
+			<finder-column name="userId"></finder-column>
+			<finder-column name="roleId"></finder-column>
+		</finder>
+	</entity>
+	<entity name="TYTeacher" local-service="true" remote-service="false">
+		<column name="teacherId" type="long" primary="true"></column>
+		<column name="teacherDegree" type="String"></column>
+		<column name="teacherCertificate" type="String"></column>
+		<column name="userId" type="long"></column>
+		<finder return-type="TYTeacher" name="userId">
+			<finder-column name="userId"></finder-column>
+		</finder>
+	</entity>
+	<entity name="TYStudentPointReserve" local-service="true" remote-service="false">
+		<column name="courses" type="int" primary="true"></column>
+		<column name="semester" type="int" primary="true"></column>
+		<column name="studentId" type="long" primary="true"></column>
+		<column name="subjectId" type="long" primary="true"></column>
+		<column name="pointType" type="int" primary="true"></column>
+		<column name="pointIndex" type="int" primary="true"></column>
+		<column name="pointFactor" type="int" primary="true"></column>
+		<column name="point" type="double"></column>
+		<column name="modifiedDate" type="Date"></column>
+		<column name="userId" type="long"></column>
+		<finder return-type="TYStudentPoint" name="C_S_S_S_PT_PI_PF">
+			<finder-column name="courses"></finder-column>
+			<finder-column name="semester"></finder-column>
+			<finder-column name="studentId"></finder-column>
+			<finder-column name="subjectId"></finder-column>
+			<finder-column name="pointType"></finder-column>
+			<finder-column name="pointIndex"></finder-column>
+			<finder-column name="pointFactor"></finder-column>
+		</finder>
+		<finder return-type="Collection" name="C_S_S_S_PT_PF">
+			<finder-column name="courses"></finder-column>
+			<finder-column name="semester"></finder-column>
+			<finder-column name="studentId"></finder-column>
+			<finder-column name="subjectId"></finder-column>
+			<finder-column name="pointType"></finder-column>
+			<finder-column name="pointFactor"></finder-column>
+		</finder>
+	</entity>
+	<entity name="TYStudentPoint" local-service="true" remote-service="false">
+		<column name="courses" type="int" primary="true"></column>
+		<column name="semester" type="int" primary="true"></column>
+		<column name="studentId" type="long" primary="true"></column>
+		<column name="subjectId" type="long" primary="true"></column>
+		<column name="pointType" type="int" primary="true"></column>
+		<column name="pointIndex" type="int" primary="true"></column>
+		<column name="pointFactor" type="int" primary="true"></column>
+		<column name="point" type="double"></column>
+		<column name="modifiedDate" type="Date"></column>
+		<column name="userId" type="long"></column>
+		<finder return-type="TYStudentPoint" name="C_S_S_S_PT_PI_PF">
+			<finder-column name="courses"></finder-column>
+			<finder-column name="semester"></finder-column>
+			<finder-column name="studentId"></finder-column>
+			<finder-column name="subjectId"></finder-column>
+			<finder-column name="pointType"></finder-column>
+			<finder-column name="pointIndex"></finder-column>
+			<finder-column name="pointFactor"></finder-column>
+		</finder>
+		<finder return-type="Collection" name="C_S_S_S_PT_PF">
+			<finder-column name="courses"></finder-column>
+			<finder-column name="semester"></finder-column>
+			<finder-column name="studentId"></finder-column>
+			<finder-column name="subjectId"></finder-column>
+			<finder-column name="pointType"></finder-column>
+			<finder-column name="pointFactor"></finder-column>
+		</finder>
+	</entity>
+	<entity name="TYStudentConduct" local-service="true" remote-service="false">
+		<column name="courses" type="int" primary="true"></column>
+		<column name="semester" type="int" primary="true"></column>
+		<column name="studentId" type="long" primary="true"></column>
+		<column name="conduct" type="int"></column>
+		<column name="modifiedDate" type="Date"></column>
+		<column name="userId" type="long"></column>
+		<finder return-type="TYStudentConduct" name="C_S_S">
+			<finder-column name="courses"></finder-column>
+			<finder-column name="semester"></finder-column>
+			<finder-column name="studentId"></finder-column>
+		</finder>
+	</entity>
+	<entity name="TYSubjectClassUserRole" local-service="true" remote-service="false">
+		<column name="courses" type="int" primary="true"></column>
+		<column name="subjectId" type="long" primary="true"></column>
+		<column name="classId" type="long" primary="true"></column>
+		<column name="userId" type="long" primary="true"></column>
+		<column name="roleId" type="long" primary="true"></column>
+		<column name="status" type="int"></column>
+		<finder return-type="Collection" name="C_S_U_R">
+			<finder-column name="courses"></finder-column>
+			<finder-column name="subjectId"></finder-column>
+			<finder-column name="userId"></finder-column>
+			<finder-column name="roleId"></finder-column>
+		</finder>
+		<finder return-type="Collection" name="C_U_R">
+			<finder-column name="courses"></finder-column>
+			<finder-column name="userId"></finder-column>
+			<finder-column name="roleId"></finder-column>
+		</finder>
+	</entity>
+	<entity name="TYPrioritySubject" local-service="true" remote-service="false">
+		<column name="courses" type="int" primary="true"></column>
+		<column name="subjectId" type="long" primary="true"></column>
+		<column name="studentId" type="long" primary="true"></column>
+		<column name="isSpecial" type="boolean"></column>
+		<column name="extra" type="int"></column>
+	</entity>
+	<entity name="Semester" local-service="true" remote-service="false">
+		<column name="companyId" type="long" primary="true"></column>
+		<column name="groupId" type="long" primary="true"></column>
+		<column name="semesterId" type="int" primary="true"></column>
+		<column name="status" type="int"></column>
+		<finder return-type="Semester" name="C_G_Status">
+			<finder-column name="companyId"></finder-column>
+			<finder-column name="groupId"></finder-column>
+			<finder-column name="status"></finder-column>
+		</finder>
+		<finder return-type="Collection" name="C_G">
+			<finder-column name="companyId"></finder-column>
+			<finder-column name="groupId"></finder-column>
+		</finder>
+	</entity>
+	<entity name="TYMessages" local-service="true" remote-service="false">
+		<column name="messageId" type="long" primary="true"></column>
+		<column name="companyId" type="long"></column>
+		<column name="groupId" type="long"></column>
+		<column name="actionId" type="long"></column>
+		<column name="userId" type="long"></column>
+		<column name="classId" type="long"></column>
+		<column name="subjectId" type="long"></column>
+		<column name="happenDate" type="Date"></column>
+		<order by="desc">
+			<order-column name="happenDate"></order-column>
+		</order>
+		<finder return-type="Collection" name="C_G">
+			<finder-column name="companyId"></finder-column>
+			<finder-column name="groupId"></finder-column>
+		</finder>
+	</entity>
+</service-builder>

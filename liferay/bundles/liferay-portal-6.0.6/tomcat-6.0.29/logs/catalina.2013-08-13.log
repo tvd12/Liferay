@@ -1,0 +1,16 @@
+Aug 13, 2013 10:28:24 AM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Aug 13, 2013 10:28:25 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 13, 2013 10:28:28 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [] created a ThreadLocal with key of type [com.liferay.portal.kernel.util.AutoResetThreadLocal] (value [class com.liferay.portal.dao.orm.common.EntityCacheImpl._localCache]) and a value of type [org.apache.commons.collections.map.LRUMap] (value [{1f279a6f={companyId=10132, accountId=10134, webId=liferay.com, key=rO0ABXNyABRqYXZhLnNlY3VyaXR5LktleVJlcL35T7OImqVDAgAETAAJYWxnb3JpdGhtdAASTGphdmEvbGFuZy9TdHJpbmc7WwAHZW5jb2RlZHQAAltCTAAGZm9ybWF0cQB+AAFMAAR0eXBldAAbTGphdmEvc2VjdXJpdHkvS2V5UmVwJFR5cGU7eHB0AANERVN1cgACW0Ks8xf4BghU4AIAAHhwAAAACHnvQ5tobeW5dAADUkFXfnIAGWphdmEuc2VjdXJpdHkuS2V5UmVwJFR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZTRUNSRVQ=, virtualHost=localhost, mx=tvd.com, homeURL=, logoId=0, system=false, maxUsers=0}, f807c9f9={layoutSetId=10159, groupId=10157, companyId=10132, privateLayout=false, logo=false, logoId=0, themeId=html5initializr_WAR_html5initializrtheme, colorSchemeId=01, wapThemeId=mobile, wapColorSchemeId=01, css=, pageCount=6, virtualHost=, settings=, layoutSetPrototypeId=0}}]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2013 10:28:28 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/wsrp-portlet] created a ThreadLocal with key of type [org.apache.axis.utils.XMLUtils.ThreadLocalDocumentBuilder] (value [org.apache.axis.utils.XMLUtils$ThreadLocalDocumentBuilder@423fdb89]) and a value of type [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl] (value [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl@6e662159]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2013 10:28:28 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: The web application [/opensocial-portlet] appears to have started a thread named [com.google.inject.internal.Finalizer] but has failed to stop it. This is very likely to create a memory leak.
+Aug 13, 2013 10:28:28 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/opensocial-portlet] created a ThreadLocal with key of type [null] (value [org.apache.shindig.common.xml.XmlUtil$2@1a834885]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@210e215c]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2013 10:28:28 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: The web application [/opensocial-portlet] created a ThreadLocal with key of type [null] (value [com.google.inject.InjectorImpl$1@26b02ff8]) and a value of type [java.lang.Object[]] (value [[Ljava.lang.Object;@791d569f]) but failed to remove it when the web application was stopped. This is very likely to create a memory leak.
+Aug 13, 2013 10:28:28 AM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080

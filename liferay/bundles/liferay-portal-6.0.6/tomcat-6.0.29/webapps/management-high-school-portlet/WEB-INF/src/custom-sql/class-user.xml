@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<custom-sql>
+	<sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.findClassesUserRoleByC_R">
+		<![CDATA[
+			
+			SELECT 	
+					TY_TYClassUserRole.classId AS classId,
+					TY_TYClassUserRole.userId AS userId,
+					TY_TYClassUserRole.roleId AS roleId,
+					TY_TYClassUserRole.status AS status
+			FROM
+					TY_TYClassUserRole, TY_TYClass, User_, Users_Groups
+			WHERE
+					TY_TYClassUserRole.courses = ?
+					AND
+					TY_TYClass.classId = TY_TYClassUserRole.classId 
+					AND
+					TY_TYClass.companyId = ?
+					AND
+					TY_TYClass.groupId = ?
+					AND
+					User_.companyId = TY_TYClass.companyId 
+					AND
+					User_.userId = TY_TYClassUserRole.userId 
+					AND
+					Users_Groups.userId = User_.userId 
+					AND
+					Users_Groups.groupId = TY_TYClass.groupId
+					AND
+					TY_TYClassUserRole.roleId = ?
+		]]>
+	</sql>
+	
+	<sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.countClassesUserRoleByC_R">
+		<![CDATA[
+			
+			SELECT 	
+					COUNT(*) AS count
+			FROM
+					TY_TYClassUserRole, TY_TYClass, User_, Users_Groups
+			WHERE
+					TY_TYClassUserRole.courses = ?
+					AND
+					TY_TYClass.classId = TY_TYClassUserRole.classId 
+					AND
+					TY_TYClass.companyId = ?
+					AND
+					TY_TYClass.groupId = ?
+					AND
+					User_.companyId = TY_TYClass.companyId 
+					AND
+					User_.userId = TY_TYClassUserRole.userId 
+					AND
+					User_Groups.userId = User_.userId 
+					AND
+					Users_Groups.groupId = TY_TYClass.groupId
+					AND
+					TY_TYClassUserRole.roleId = ?
+		]]>
+	</sql>
+	
+	<sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.findClassesUserRoleByCourse">
+		<![CDATA[
+			
+			SELECT 	
+					TY_TYClassUserRole.classId as classId,
+					TY_TYClassUserRole.userId as userId,
+					TY_TYClassUserRole.roleId as roleId,
+					TY_TYClassUserRole.status as status
+			FROM
+					TY_TYClassUserRole, TY_TYClass, User_, Users_Groups
+			WHERE
+					TY_TYClassUserRole.courses = ?
+					AND
+					TY_TYClass.classId = TY_TYClassUserRole.classId 
+					AND
+					TY_TYClass.companyId = ?
+					AND
+					TY_TYClass.groupId = ?
+					AND
+					User_.companyId = TY_TYClass.companyId 
+					AND
+					User_.userId = TY_TYClassUserRole.userId 
+					AND
+					Users_Groups.userId = User_.userId 
+					AND
+					Users_Groups.groupId = TY_TYClass.groupId
+		]]>
+	</sql>
+	
+	<sql id="org.tvd.thptty.service.persistence.TYStudentPointFinder.countClassesUserRoleByCourse">
+		<![CDATA[
+			
+			SELECT 	
+					COUNT(*) as count
+			FROM
+					TY_TYClassUserRole, TY_TYClass, User_, Users_Groups
+			WHERE
+					TY_TYClassUserRole.courses = ?
+					AND
+					TY_TYClass.classId = TY_TYClassUserRole.classId 
+					AND
+					TY_TYClass.companyId = ?
+					AND
+					TY_TYClass.groupId = ?
+					AND
+					User_.companyId = TY_TYClass.companyId 
+					AND
+					User_.userId = TY_TYClassUserRole.userId 
+					AND
+					Users_Groups.userId = User_.userId 
+					AND
+					Users_Groups.groupId = TY_TYClass.groupId
+		]]>
+	</sql>
+</custom-sql>
